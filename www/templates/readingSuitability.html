@@ -1,0 +1,107 @@
+<ion-view cache-view="false">
+  <div ng-controller="StorageCtrl">
+    <ion-content delegate-handle="mainScroll">
+
+      <div class="center">
+      <h3 ng-class="headerClass" class="center white padding">Suitability Reading</h3>
+        <div class="hidden-box">{{spreadURL='app.spreadSuitability'}} {{newDate | date:'MM-dd-yyyy'}} {{spread='Suitability'}} {{headerClass='red'}}</div>
+      <form class="padding" ng-submit="slideTo('results')">
+      <input type="text" ng-model="newQuery" class="litegray centertextarea padding"
+                placeholder=" What is your query about?"></input>
+      </form>
+        <button class="button button-clear padding skip-button" ng-click="slideTo('results')">Skip
+        </button>
+
+
+        <button ng-click="slideTo('results')" ng-class="headerClass" class="button white large-icon center confirm-button">
+          Confirm
+        </button>
+
+      </div>
+
+
+      <div class="center below-fold">
+      <a ng-click="slideTo('layout')">
+        <img id="results" src="img/spreadSuitability.jpg">
+      </a>
+      </div>
+
+      <div ng-class="headerClass" class="item item-divider white large-icon">
+        Results
+      </div>
+
+      <ion-list>
+
+        <div ng-repeat="card in newReading = (cardNames | limitTo: 11)">
+
+         <div ng-hide="hideTrigger" class="padding-big"> <a class="remove-underline" href="#" ng-click="revealedCards=true; hideTrigger=true"> <img class="smallcard" ng-src="/img/blankCard.jpg"><div class="vertical-pad">{{$index + 1}}. Reveal</div></a> </div>
+
+          <div ng-show="revealedCards">
+          <ion-item class="button-full" ui-sref="{{card.cardURL}}">
+            <img class="smallcard" ng-src="{{card.cardImage}}"><div ng-init="card.cardName" class="vertical-pad">{{$index + 1}}. {{card.cardName}}</div>
+          </ion-item>
+          </div>
+
+
+        </div>
+
+
+      </ion-list>
+      <h3 ng-class="headerClass" class="white padding">
+        Notes
+      </h3>
+      <div class="center padding">
+      <form ng-submit="addSpread(newDate, notes, newReading, spread, headerClass, spreadURL, newQuery); clearNav(); scrollToTop()">
+      <input type ="text" ng-model="notes" class="litegray centertextarea padding"
+                placeholder=" Reflections on your reading..."></input>
+    </form>
+        <button nav-clear class="button button-clear padding skip-button" ng-click="clearNav(); scrollToTop()" ui-sref="app.read">Skip
+        </button>
+
+      <button ng-click="addSpread(newDate, notes, newReading, spread, headerClass, spreadURL, newQuery); clearNav(); scrollToTop()" ui-sref="app.journal" ng-class="headerClass" class="button white large-icon confirm-button">
+        Save Reading
+      </button>
+</div>
+      <div ng-class="headerClass" class="item item-divider white large-icon" id="layout">
+          Layout
+        </div>
+
+        <div class="padding">
+
+        <p>1. The spiritual compatibility between the querent and their partner.</p>
+
+        <p>2. The emotional compatibility between the querent and their partner.</p>
+
+        <p>3. The mental compatibility between the querent and their partner.</p>
+
+        <p>4. The querent's wants and needs.</p>
+
+        <p>5. The querent's partner’s wants and needs.</p>
+
+        <p>6. The relationship’s potential for these wants and needs to be met.</p>
+
+        <p>7. Differences between the querent and their partner working in favor of them.</p>
+
+        <p>8. Differences between the querent and their partner working against them.</p>
+
+        <p>9. Can the querent be happy with this person?</p>
+
+        <p>10. Can the querent’s partner be happy with the querent?</p>
+
+        <p>11. Overall view or recommendation.</p>
+
+        </div>
+
+        <div ng-class="headerClass" class="item item-divider white large-icon">
+          Reading
+        </div>
+        <div class="padding">
+          <p>An eleven card spread that looks at the compatibility of the emotional, mental and spiritual
+          aspects of the querent's relationship. It also considers how well the the two of you them can meet each
+          other's wants and needs, and whether happiness for each of them is possible.</p>
+        </div>
+
+    </ion-content>
+
+  </div>
+</ion-view>

@@ -1,0 +1,104 @@
+<ion-view cache-view="false">
+  <div ng-controller="StorageCtrl">
+    <ion-content delegate-handle="mainScroll">
+
+      <div class="center">
+      <h3 ng-class="headerClass" class="center white padding">Finance Reading</h3>
+        <div class="hidden-box">{{spreadURL='app.spreadFinance'}} {{newDate | date:'MM-dd-yyyy'}} {{spread='Finance'}} {{headerClass='green'}}</div>
+      <form class="padding" ng-submit="slideTo('results')">
+      <input type="text" ng-model="newQuery" class="litegray centertextarea padding"
+                placeholder=" What is your query about?"></input>
+      </form>
+        <button class="button button-clear padding skip-button" ng-click="slideTo('results')">Skip
+        </button>
+
+
+        <button ng-click="slideTo('results')" ng-class="headerClass" class="button white large-icon center confirm-button">
+          Confirm
+        </button>
+
+      </div>
+
+
+      <div class="center below-fold">
+      <a ng-click="slideTo('layout')">
+        <img id="results" src="img/spreadFinance.jpg">
+      </a>
+      </div>
+
+      <div ng-class="headerClass" class="item item-divider white large-icon">
+        Results
+      </div>
+
+      <ion-list>
+
+        <div ng-repeat="card in newReading = (cardNames | limitTo: 10)">
+
+         <div ng-hide="hideTrigger" class="padding-big"> <a class="remove-underline" href="#" ng-click="revealedCards=true; hideTrigger=true"> <img class="smallcard" ng-src="/img/blankCard.jpg"><div class="vertical-pad">{{$index + 1}}. Reveal</div></a> </div>
+
+          <div ng-show="revealedCards">
+          <ion-item class="button-full" ui-sref="{{card.cardURL}}">
+            <img class="smallcard" ng-src="{{card.cardImage}}"><div ng-init="card.cardName" class="vertical-pad">{{$index + 1}}. {{card.cardName}}</div>
+          </ion-item>
+          </div>
+
+
+        </div>
+
+
+      </ion-list>
+      <h3 ng-class="headerClass" class="white padding">
+        Notes
+      </h3>
+      <div class="center padding">
+      <form ng-submit="addSpread(newDate, notes, newReading, spread, headerClass, spreadURL, newQuery); clearNav(); scrollToTop()">
+      <input type ="text" ng-model="notes" class="litegray centertextarea padding"
+                placeholder=" Reflections on your reading..."></input>
+    </form>
+        <button nav-clear class="button button-clear padding skip-button" ng-click="clearNav(); scrollToTop()" ui-sref="app.read">Skip
+        </button>
+
+      <button ng-click="addSpread(newDate, notes, newReading, spread, headerClass, spreadURL, newQuery); clearNav(); scrollToTop()" ui-sref="app.journal" ng-class="headerClass" class="button white large-icon confirm-button">
+        Save Reading
+      </button>
+</div>
+      <div ng-class="headerClass" class="item item-divider white large-icon" id="layout">
+          Layout
+        </div>
+
+        <div class="padding">
+
+        <p>1. What are the querent's main concerns about money? #1</p>
+
+        <p>2. What are the querent's main concerns about money? #2</p>
+
+        <p>3. What are the querent's main concerns about money? #3</p>
+
+        <p>4. What are the querent's main concerns about money? #4</p>
+
+        <p>5. How can the querent gain financial security? #1</p>
+
+        <p>6. How can the querent gain financial security? #2</p>
+
+        <p>7. How can the querent gain financial security? #3</p>
+
+        <p>8. Who can offer the querent the help they need? #1</p>
+
+        <p>9. Who can offer the querent the help they need? #2</p>
+
+        <p>10. What are the querent's plans for the future?</p>
+
+        </div>
+
+        <div ng-class="headerClass" class="item item-divider white large-icon">
+          Reading
+        </div>
+        <div class="padding">
+          <p>A ten card spread that examines the querent's financial situation. It looks at their concerns
+          and whether there is anything that can be done to help improve financial security.</p>
+        </div>
+
+    </ion-content>
+
+  </div>
+</ion-view>

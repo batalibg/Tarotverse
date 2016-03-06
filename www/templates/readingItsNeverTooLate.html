@@ -1,0 +1,115 @@
+<ion-view cache-view="false">
+  <div ng-controller="StorageCtrl">
+    <ion-content delegate-handle="mainScroll">
+
+      <div class="center">
+      <h3 ng-class="headerClass" class="center white padding">Its Never Too Late Reading</h3>
+        <div class="hidden-box">{{spreadURL='app.spreadItsNeverTooLate'}} {{newDate | date:'MM-dd-yyyy'}} {{spread='It's Never Too Late'}} {{headerClass='red'}}</div>
+      <form class="padding" ng-submit="slideTo('results')">
+      <input type="text" ng-model="newQuery" class="litegray centertextarea padding"
+                placeholder=" What is your query about?"></input>
+      </form>
+        <button class="button button-clear padding skip-button" ng-click="slideTo('results')">Skip
+        </button>
+
+
+        <button ng-click="slideTo('results')" ng-class="headerClass" class="button white large-icon center confirm-button">
+          Confirm
+        </button>
+
+      </div>
+
+
+      <div class="center below-fold">
+      <a ng-click="slideTo('layout')">
+        <img id="results" src="img/spreadItsNeverTooLate.jpg">
+      </a>
+      </div>
+
+      <div ng-class="headerClass" class="item item-divider white large-icon">
+        Results
+      </div>
+
+      <ion-list>
+
+        <div ng-repeat="card in newReading = (cardNames | limitTo: 9)">
+
+         <div ng-hide="hideTrigger" class="padding-big"> <a class="remove-underline" href="#" ng-click="revealedCards=true; hideTrigger=true"> <img class="smallcard" ng-src="/img/blankCard.jpg"><div class="vertical-pad">{{$index + 1}}. Reveal</div></a> </div>
+
+          <div ng-show="revealedCards">
+          <ion-item class="button-full" ui-sref="{{card.cardURL}}">
+            <img class="smallcard" ng-src="{{card.cardImage}}"><div ng-init="card.cardName" class="vertical-pad">{{$index + 1}}. {{card.cardName}}</div>
+          </ion-item>
+          </div>
+
+
+        </div>
+
+
+      </ion-list>
+      <h3 ng-class="headerClass" class="white padding">
+        Notes
+      </h3>
+      <div class="center padding">
+      <form ng-submit="addSpread(newDate, notes, newReading, spread, headerClass, spreadURL, newQuery); clearNav(); scrollToTop()">
+      <input type ="text" ng-model="notes" class="litegray centertextarea padding"
+                placeholder=" Reflections on your reading..."></input>
+    </form>
+        <button nav-clear class="button button-clear padding skip-button" ng-click="clearNav(); scrollToTop()" ui-sref="app.read">Skip
+        </button>
+
+      <button ng-click="addSpread(newDate, notes, newReading, spread, headerClass, spreadURL, newQuery); clearNav(); scrollToTop()" ui-sref="app.journal" ng-class="headerClass" class="button white large-icon confirm-button">
+        Save Reading
+      </button>
+</div>
+      <div ng-class="headerClass" class="item item-divider white large-icon" id="layout">
+          Layout
+        </div>
+
+        <div class="padding">
+
+        <p>1. Will the querent ever find love again?</p>
+
+        <p>2. Does the querent already know this person?</p>
+
+        <p>3. If the answer is "yes" then this card represents where the querent knows the person from. If no, then
+          when/where/how will the querent meet this person?</p>
+
+        <p>4. If #2 is "yes" then go to #5. If no, then will the attraction be instant or a slow-burning
+          realization?</p>
+
+        <p>5. Are there issues that are delaying a meeting/relationship with this person?</p>
+
+        <p>6. What will this person be like physically?</p>
+
+        <p>7. What will this person be like emotionally?</p>
+
+        <p>8. What will this person be like sexually?</p>
+
+        <p>9. The potential of the relationship.</p>
+
+        </div>
+
+        <div ng-class="headerClass" class="item item-divider white large-icon">
+          Reading
+        </div>
+        <div class="padding">
+          <p>A nine card spread that addresses whether a querent who is in the later part of life will ever
+          find love again.</p>
+        </div>
+
+        <div ng-class="headerClass" class="item item-divider white large-icon">
+          Insights
+        </div>
+        <div class="padding">
+          <p>If the answer to #2 is "yes" then #3 is interpreted as to where the querent knows this person from and #4 should
+          not be read. This reading introduces a sexual component to the love reading as not everyone in later life is
+          sexually active.</p>
+        </div>
+
+
+
+    </ion-content>
+
+  </div>
+</ion-view>

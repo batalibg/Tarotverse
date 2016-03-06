@@ -1,0 +1,284 @@
+<ion-view>
+  <div ng-controller="StorageCtrl">
+  <ion-content delegate-handle="mainScroll">
+    <h3 class="handwritten center padding-top large-font grey">CARDS</h3>
+    <div class="center">
+      <img src="img/tarotverseCards.png">
+    </div>
+    <a class="button button-block large-icon ion-ios-bolt-outline plum white" ng-click="slideTo('majorarcana')">
+      Major Arcana
+    </a>
+    <a class="button button-block large-icon ion-ios-wineglass-outline teal white" ng-click="slideTo('cups')">
+      Cups
+    </a>
+    <a class="button button-block large-icon ion-ios-star-outline orange white" ng-click="slideTo('pentacles')">
+      Pentacles
+    </a>
+    <a class="button button-block large-icon ion-ios-color-wand-outline green white" ng-click="slideTo('wands')">
+      Wands
+    </a>
+    <a class="button button-block large-icon ion-knife red white" ng-click="slideTo('swords')">
+      Swords
+    </a>
+    <div class="huge-icon ion-ios-infinite-outline grey center"></div>
+    <ion-list>
+      <ion-item id="majorarcana" class="large-icon ion-ios-bolt-outline plum white">
+        Major Arcana
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.theFool">
+        <img class="smallcard" src="/img/theFool.jpg"><div class="vertical-pad">The Fool</div>
+       </ion-item>
+      <ion-item class="button-full" ui-sref="app.theMagician">
+        <img class="smallcard" src="/img/theMagician.jpg"><div class="vertical-pad">The Magician</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.theHighPriestess">
+        <img class="smallcard" src="/img/theHighPriestess.jpg"><div class="vertical-pad">The High Priestess</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.theEmpress">
+        <img class="smallcard" src="/img/theEmpress.jpg"><div class="vertical-pad">The Empress</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.theEmperor">
+        <img class="smallcard" src="/img/theEmperor.jpg"><div class="vertical-pad">The Emperor</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.theHierophant">
+        <img class="smallcard" src="/img/theHierophant.jpg"><div class="vertical-pad">The Hierophant</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.theLovers">
+        <img class="smallcard" src="/img/theLovers.jpg"><div class="vertical-pad">The Lovers</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.theChariot">
+        <img class="smallcard" src="/img/theChariot.jpg"><div class="vertical-pad">The Chariot</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.justice">
+        <img class="smallcard" src="/img/justice.jpg"><div class="vertical-pad">Justice</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.theHermit">
+        <img class="smallcard" src="/img/theHermit.jpg"><div class="vertical-pad">The Hermit</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.theWheel">
+        <img class="smallcard" src="/img/theWheel.jpg"><div class="vertical-pad">The Wheel of Fortune</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.strength">
+        <img class="smallcard" src="/img/strength.jpg"><div class="vertical-pad">Strength</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.theHangedMan">
+        <img class="smallcard" src="/img/theHangedMan.jpg"><div class="vertical-pad">The Hanged Man</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.death">
+        <img class="smallcard" src="/img/death.jpg"><div class="vertical-pad">Death</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.temperance">
+        <img class="smallcard" src="/img/temperance.jpg"><div class="vertical-pad">Temperance</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.theDevil">
+        <img class="smallcard" src="/img/theDevil.jpg"><div class="vertical-pad">The Devil</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.theTower">
+        <img class="smallcard" src="/img/theTower.jpg"><div class="vertical-pad">The Tower</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.theStar">
+        <img class="smallcard" src="/img/theStar.jpg"><div class="vertical-pad">The Star</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.theMoon">
+        <img class="smallcard" src="/img/theMoon.jpg"><div class="vertical-pad">The Moon</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.theSun">
+        <img class="smallcard" src="/img/theSun.jpg"><div class="vertical-pad">The Sun</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.judgement">
+        <img class="smallcard" src="/img/judgement.jpg"><div class="vertical-pad">Judgement</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.theWorld">
+        <img class="smallcard" src="/img/theWorld.jpg"><div class="vertical-pad">The World</div>
+      </ion-item>
+      <ion-item id="cups" class="large-icon ion-ios-wineglass-outline teal white">
+        Cups
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.aceOfCups">
+        <img class="smallcard" src="/img/aceOfCups.jpg"><div class="vertical-pad">Ace of Cups</div>
+  </ion-item>
+    <ion-item class="button-full" ui-sref="app.twoOfCups">
+      <img class="smallcard" src="/img/twoOfCups.jpg"><div class="vertical-pad">Two of Cups</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.threeOfCups">
+      <img class="smallcard" src="/img/threeOfCups.jpg"><div class="vertical-pad">Three of Cups</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.fourOfCups">
+      <img class="smallcard" src="/img/fourOfCups.jpg"><div class="vertical-pad">Four of Cups</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.fiveOfCups">
+      <img class="smallcard" src="/img/fiveOfCups.jpg"><div class="vertical-pad">Five of Cups</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.sixOfCups">
+      <img class="smallcard" src="/img/sixOfCups.jpg"><div class="vertical-pad">Six of Cups</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.sevenOfCups">
+      <img class="smallcard" src="/img/sevenOfCups.jpg"><div class="vertical-pad">Seven of Cups</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.eightOfCups">
+      <img class="smallcard" src="/img/eightOfCups.jpg"><div class="vertical-pad">Eight of Cups</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.nineOfCups">
+      <img class="smallcard" src="/img/nineOfCups.jpg"><div class="vertical-pad">Nine of Cups</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.tenOfCups">
+      <img class="smallcard" src="/img/tenOfCups.jpg"><div class="vertical-pad">Ten of Cups</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.pageOfCups">
+      <img class="smallcard" src="/img/pageOfCups.jpg"><div class="vertical-pad">Page of Cups</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.knightOfCups">
+      <img class="smallcard" src="/img/knightOfCups.jpg"><div class="vertical-pad">Knight of Cups</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.queenOfCups">
+      <img class="smallcard" src="/img/queenOfCups.jpg"><div class="vertical-pad">Queen of Cups</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.kingOfCups">
+      <img class="smallcard" src="/img/kingOfCups.jpg"><div class="vertical-pad">King of Cups</div>
+    </ion-item>
+      <ion-item id="pentacles" class="large-icon ion-ios-star-outline orange white">
+        Pentacles
+      </ion-item>
+    <ion-item class="button-full" ui-sref="app.aceOfPentacles">
+      <img class="smallcard" src="/img/aceOfPentacles.jpg"><div class="vertical-pad">Ace of Pentacles</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.twoOfPentacles">
+      <img class="smallcard" src="/img/twoOfPentacles.jpg"><div class="vertical-pad">Two of Pentacles</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.threeOfPentacles">
+      <img class="smallcard" src="/img/threeOfPentacles.jpg"><div class="vertical-pad">Three of Pentacles</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.fourOfPentacles">
+      <img class="smallcard" src="/img/fourOfPentacles.jpg"><div class="vertical-pad">Four of Pentacles</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.fiveOfPentacles">
+      <img class="smallcard" src="/img/fiveOfPentacles.jpg"><div class="vertical-pad">Five of Pentacles</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.sixOfPentacles">
+      <img class="smallcard" src="/img/sixOfPentacles.jpg"><div class="vertical-pad">Six of Pentacles</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.sevenOfPentacles">
+      <img class="smallcard" src="/img/sevenOfPentacles.jpg"><div class="vertical-pad">Seven of Pentacles</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.eightOfPentacles">
+      <img class="smallcard" src="/img/eightOfPentacles.jpg"><div class="vertical-pad">Eight of Pentacles</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.nineOfPentacles">
+      <img class="smallcard" src="/img/nineOfPentacles.jpg"><div class="vertical-pad">Nine of Pentacles</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.tenOfPentacles">
+      <img class="smallcard" src="/img/tenOfPentacles.jpg"><div class="vertical-pad">Ten of Pentacles</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.pageOfPentacles">
+      <img class="smallcard" src="/img/pageOfPentacles.jpg"><div class="vertical-pad">Page of Pentacles</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.knightOfPentacles">
+      <img class="smallcard" src="/img/knightOfPentacles.jpg"><div class="vertical-pad">Knight of Pentacles</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.queenOfPentacles">
+      <img class="smallcard" src="/img/queenOfPentacles.jpg"><div class="vertical-pad">Queen of Pentacles</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.kingOfPentacles">
+      <img class="smallcard" src="/img/kingOfPentacles.jpg"><div class="vertical-pad">King of Pentacles</div>
+    </ion-item>
+      <ion-item id="wands" class="large-icon ion-ios-color-wand-outline green white">
+        Wands
+      </ion-item>
+    <ion-item class="button-full" ui-sref="app.aceOfWands">
+      <img class="smallcard" src="/img/aceOfWands.jpg"><div class="vertical-pad">Ace of Wands</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.twoOfWands">
+      <img class="smallcard" src="/img/twoOfWands.jpg"><div class="vertical-pad">Two of Wands</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.threeOfWands">
+      <img class="smallcard" src="/img/threeOfWands.jpg"><div class="vertical-pad">Three of Wands</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.fourOfWands">
+      <img class="smallcard" src="/img/fourOfWands.jpg"><div class="vertical-pad">Four of Wands</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.fiveOfWands">
+      <img class="smallcard" src="/img/fiveOfWands.jpg"><div class="vertical-pad">Five of Wands</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.sixOfWands">
+      <img class="smallcard" src="/img/sixOfWands.jpg"><div class="vertical-pad">Six of Wands</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.sevenOfWands">
+      <img class="smallcard" src="/img/sevenOfWands.jpg"><div class="vertical-pad">Seven of Wands</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.eightOfWands">
+      <img class="smallcard" src="/img/eightOfWands.jpg"><div class="vertical-pad">Eight of Wands</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.nineOfWands">
+      <img class="smallcard" src="/img/nineOfWands.jpg"><div class="vertical-pad">Nine of Wands</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.tenOfWands">
+      <img class="smallcard" src="/img/tenOfWands.jpg"><div class="vertical-pad">Ten of Wands</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.pageOfWands">
+      <img class="smallcard" src="/img/pageOfWands.jpg"><div class="vertical-pad">Page of Wands</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.knightOfWands">
+      <img class="smallcard" src="/img/knightOfWands.jpg"><div class="vertical-pad">Knight of Wands</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.queenOfWands">
+      <img class="smallcard" src="/img/queenOfWands.jpg"><div class="vertical-pad">Queen of Wands</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.kingOfWands">
+      <img class="smallcard" src="/img/kingOfWands.jpg"><div class="vertical-pad">King of Wands</div>
+    </ion-item>
+      <ion-item id="swords" class="large-icon ion-knife red white">
+        Swords
+      </ion-item>
+    <ion-item class="button-full" ui-sref="app.aceOfSwords">
+      <img class="smallcard" src="/img/aceOfSwords.jpg"><div class="vertical-pad">Ace of Swords</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.twoOfSwords">
+      <img class="smallcard" src="/img/twoOfSwords.jpg"><div class="vertical-pad">Two of Swords</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.threeOfSwords">
+      <img class="smallcard" src="/img/threeOfSwords.jpg"><div class="vertical-pad">Three of Swords</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.fourOfSwords">
+      <img class="smallcard" src="/img/fourOfSwords.jpg"><div class="vertical-pad">Four of Swords</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.fiveOfSwords">
+      <img class="smallcard" src="/img/fiveOfSwords.jpg"><div class="vertical-pad">Five of Swords</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.sixOfSwords">
+      <img class="smallcard" src="/img/sixOfSwords.jpg"><div class="vertical-pad">Six of Swords</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.sevenOfSwords">
+      <img class="smallcard" src="/img/sevenOfSwords.jpg"><div class="vertical-pad">Seven of Swords</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.eightOfSwords">
+      <img class="smallcard" src="/img/eightOfSwords.jpg"><div class="vertical-pad">Eight of Swords</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.nineOfSwords">
+      <img class="smallcard" src="/img/nineOfSwords.jpg"><div class="vertical-pad">Nine of Swords</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.tenOfSwords">
+      <img class="smallcard" src="/img/tenOfSwords.jpg"><div class="vertical-pad">Ten of Swords</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.pageOfSwords">
+      <img class="smallcard" src="/img/pageOfSwords.jpg"><div class="vertical-pad">Page of Swords</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.knightOfSwords">
+      <img class="smallcard" src="/img/knightOfSwords.jpg"><div class="vertical-pad">Knight of Swords</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.queenOfSwords">
+      <img class="smallcard" src="/img/queenOfSwords.jpg"><div class="vertical-pad">Queen of Swords</div>
+    </ion-item>
+    <ion-item class="button-full" ui-sref="app.kingOfSwords">
+      <img class="smallcard" src="/img/kingOfSwords.jpg"><div class="vertical-pad">King of Swords</div>
+    </ion-item>
+      </ion-list>
+  </ion-content>
+  <div class="float-button">
+ <span class="height-fix">
+    <a class="content" ng-click="scrollToTop()">
+      <i class="ion-ios-arrow-up"> </i>
+    </a>
+    </span>
+  </div>
+    </div>
+</ion-view>

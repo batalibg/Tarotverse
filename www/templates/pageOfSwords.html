@@ -1,0 +1,218 @@
+<ion-view>
+  <div ng-controller="StorageCtrl">
+    <ion-content delegate-handle="mainScroll">
+      <h3 class="handwritten center padding-top large-font red white">PAGE OF SWORDS</h3>
+      <a class="button button-block large-icon ion-arrow-up-c" ng-click="slideTo('upright')">
+        Upright
+      </a>
+      <a class="button button-block large-icon ion-arrow-down-c" ng-click="slideTo('reversed')">
+        Reversed
+      </a>
+      <a class="button button-block large-icon ion-image" ng-click="slideTo('symbolism')">
+        Symbolism
+      </a>
+      <a class="button button-block large-icon ion-plus-round" ng-click="slideTo('combinations')">
+        Combinations
+      </a>
+      <a class="button button-block large-icon ion-ios-paper-outline" ng-click="slideTo('summary')">
+        Summary
+      </a>
+
+      <div class="center padding">
+        <img src="img/pageOfSwords.jpg">
+      </div>
+
+
+      <div class="item item-divider red white large-icon ion-arrow-up-c" id="upright">
+        Upright
+      </div>
+      <div class="padding">
+        <h4 class="padding">Key Phrases</h4>
+
+        <p>1. Gossip and news.</p>
+
+        <p>2. Strong mental abilities.</p>
+
+        <p>3. Plenty of knowledge, but little wisdom.</p>
+
+        <p>4. Being clever and quick-witted.</p>
+
+        <p>5. Spying on others or being spied on.</p>
+
+        <p>6. Lies and deception. Unpredictable.</p>
+
+        <p>7. Being kept on your toes.</p>
+
+        <p>8. Being a natural at something (often something you have done from a young age).</p>
+
+
+        <h4 class="padding">Meanings</h4>
+
+        <p>The Page of Swords reports a mentally very active and clever person. This is someone who can
+          concentrate over long periods of time and who learns new skills easily, especially mental skills. This is
+          someone who is very talkative and restless, and who can get bored quite easily if not constantly stimulated.
+          This is someone who is also generous with the truth.</p>
+
+        <p>In relationship questions the Page of Swords is someone who is in no hurry to settle down. If this card describes
+          a situation then there might be gossip and unnecessary drama going on. In a career question this card
+          denotes excelling. </p>
+
+        <p>In a love reading the Page of Swords expresses a unique relationship that refuses to conform to
+          conventions. If the querent is single they might find it hard to settle down. If the querent wants to be in a
+          serious relationship the Page of Swords might mean the querent struggles to meet someone they click
+          with.</p>
+
+        <p>In a career question the Page of Swords can suggest that the querent is using a skill they learned from an
+          early age. It can also mean communication jobs, espionage, careers in sales and information
+          gathering. </p>
+
+
+        <h4 class="padding">Personality Types</h4>
+
+        <p>The Page of Swords signifies a free-thinker who harbours a love for freedom and non-conformity. This
+          is someone who is quite restless, inquisitive and at times idealistic. They need to have their own unique
+          expressiveness and have a tendency to alienate others. These people are different to the point where
+          they are weird and quirky, but in a wondrous way. They have a tendency to be dramatic and are great
+          storytellers. They need to be on the move constantly and are highly independent. </p>
+
+        <p>In love a Page of Swords type person needs someone who will accept them completely, as they tend to suffer when they have
+          to conform to fit in with others. This is a student of life who is always learning. They are very
+          unpredictable and they are good at keeping others on their toes.</p>
+      </div>
+
+
+      <div class="item item-divider large-icon red white ion-arrow-down-c" id="reversed">
+        Reversed
+      </div>
+      <div class="padding">
+        <h4 class="padding">Key Phrases</h4>
+
+        <p>1. Lying.</p>
+
+        <p>2. Vicious rumors.</p>
+
+        <p>3. Stalking.</p>
+
+
+        <h4 class="padding">Meanings</h4>
+
+        <p>In the occassion that the Page of Swords is reversed it indicates a person who lies, gossips and spreads rumors.
+          It can denote someone who says inappropriate things, or who criticizes others in an unfair and mean way. They
+          don’t often keep secrets or promises.</p>
+
+        <p>This card also shows up reversed when there is news regarding negative legal matters. On an even more
+          sinister note, this card can show up reversed when someone is being stalked and spied on.</p>
+
+
+        <h4 class="padding">Personality Types</h4>
+
+        <p>This tyoe of person is someone looking for purpose, and feels lost without it. They
+          have a hard time fitting in and are upset by the fact that they often get ignored, or viewed as insignificant.
+          They long for someone to swoop them off their feet and take them away from all their problems.
+        </p>
+
+        <p>They have a tendency to exaggerate their own significance and are drawn to extreme anti-social behaviour and
+          dangerous social groups. Their political views are often extreme. They have to realise they are not
+          victims. They need to learn to have more compassion.</p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon red white ion-image" id="symbolism">
+        Symbolism
+      </div>
+      <div class="padding">
+
+        <p>The young man standing on rugged terrain infers being willing to go where no one has gone before. The
+          wind in the trees suggests gossip and news. The orange shoes hints at passion. </p>
+
+        <p>The sword held up to the sky represents mental energy. The yellow clothing symbolizes the intellect. The
+          birds above the young man’s head communicate imagination and a love of freedom.</p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon red white ion-plus-round" id="combinations">
+        Combinations
+      </div>
+      <div class="padding">
+        <p>1. Page of Swords + <a ui-sref="app.theFool">The Fool</a>: A talent that needs to be nurtured.</p>
+
+        <p>2. Page of Swords + <a ui-sref="app.theHighPriestess">The High Priestess</a>: A talented psychic.</p>
+
+        <p>3. Page of Swords + <a ui-sref="app.theWheel">The Wheel of Fortune</a>: Discovering your talents.</p>
+
+        <p>4. Page of Swords + <a ui-sref="app.strength">Strength</a>: A strong talent.</p>
+
+        <p>5. Page of Swords + <a ui-sref="app.theStar">The Star</a>: A very intelligent person.</p>
+
+        <p>6. Page of Swords + <a ui-sref="app.theMoon">The Moon</a>: A spy. Spying on others.</p>
+
+        <p>7. Page of Swords + <a ui-sref="app.fourOfCups">Four of Cups</a>: Restlessness.</p>
+
+        <p>8. Page of Swords + <a ui-sref="app.sixOfCups">Six of Cups</a>: A talented child.
+        </p>
+
+        <p>9. Page of Swords + <a ui-sref="app.sevenOfCups">Seven of Cups</a>: Avoiding boredom.</p>
+
+        <p>10. Page of Swords + <a ui-sref="app.nineOfCups">Nine of Cups</a>: A smooth talker.</p>
+
+        <p>11. Page of Swords + <a ui-sref="app.tenOfCups">Ten of Cups</a>: A confident person.</p>
+
+        <p>12. Page of Swords + <a ui-sref="app.sixOfPentacles">Six of Pentacles</a>: A child actor. Natural talent in
+          acting.</p>
+
+        <p>13. Page of Swords + <a ui-sref="app.aceOfWands">aceOfWands</a>: A passionate and adventurous person.</p>
+
+        <p>14. Page of Swords + <a ui-sref="app.fiveOfWands">Five of Wands</a>: Getting on people’s nerves.</p>
+
+        <p>15. Page of Swords + <a ui-sref="app.sixOfWands">Six of Wands</a>: Knowing what your strengths are.</p>
+
+        <p>16. Page of Swords + <a ui-sref="app.eightOfWands">Eight of Wands</a>: Receiving news over emails.</p>
+
+        <p>17. Page of Swords + <a ui-sref="app.nineOfWands">Nine of Wands</a>: A strong and clever person.</p>
+
+        <p>18. Page of Swords + <a ui-sref="app.aceOfSwords">Ace of Swords</a>: A mental test. A quiz.</p>
+
+        <p>19. Page of Swords + <a ui-sref="app.threeOfSwords">Three of Swords</a>: A talented person in the wrong field.
+        </p>
+
+        <p>20. Page of Swords + <a ui-sref="app.fourOfSwords">Four of Swords</a>: A natural therapist. Natural therapy.
+          A healer.
+        </p>
+
+        <p>21. Page of Swords + <a ui-sref="app.sevenOfSwords">Seven of Swords</a>: Whistle-blowing. Spying.</p>
+
+        <p>22. Page of Swords + <a ui-sref="app.nineOfSwords">Nine of Swords</a>: Worrying about gossips and rumours.
+        </p>
+
+        <p>23. Page of Swords + <a ui-sref="app.tenOfSwords">Ten of Swords</a>: Learning the hard way.</p>
+      </div>
+
+
+      <div class="item item-divider large-icon red white ion-ios-paper-outline" id="summary">
+        Summary
+      </div>
+      <div class="padding">
+        <p>The Page of Swords possesses talent, dexterity, and mental alertness.  It can
+          signify someone who has a skill they have been born with, or have done for a long time. It is in their blood
+          and they make it look so easy.
+        </p>
+
+        <p>
+          If the Page of Swords shows up in your reading you are encouraged to use your talents to inspire the
+          world. It is time to further develop your natural abilities.
+        </p>
+
+      </div>
+
+    </ion-content>
+    <div class="float-button">
+ <span class="height-fix">
+    <a class="content" ng-click="scrollToTop()">
+      <i class="ion-ios-arrow-up"> </i>
+    </a>
+    </span>
+    </div>
+  </div>
+</ion-view>

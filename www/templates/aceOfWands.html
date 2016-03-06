@@ -1,0 +1,215 @@
+<ion-view>
+  <div ng-controller="StorageCtrl">
+    <ion-content delegate-handle="mainScroll">
+      <h3 class="handwritten center padding-top large-font green white">ACE OF WANDS</h3>
+      <a class="button button-block large-icon ion-arrow-up-c" ng-click="slideTo('upright')">
+        Upright
+      </a>
+      <a class="button button-block large-icon ion-arrow-down-c" ng-click="slideTo('reversed')">
+        Reversed
+      </a>
+      <a class="button button-block large-icon ion-image" ng-click="slideTo('symbolism')">
+        Symbolism
+      </a>
+      <a class="button button-block large-icon ion-plus-round" ng-click="slideTo('combinations')">
+        Combinations
+      </a>
+      <a class="button button-block large-icon ion-ios-paper-outline" ng-click="slideTo('summary')">
+        Summary
+      </a>
+
+      <div class="center padding">
+        <img src="img/aceOfWands.jpg">
+      </div>
+
+
+      <div class="item item-divider green white large-icon ion-arrow-up-c" id="upright">
+        Upright
+      </div>
+      <div class="padding">
+        <h4 class="padding">Key Phrases</h4>
+
+        <p>1. A new beginning.</p>
+
+        <p>2. Expanding your potential.</p>
+
+        <p>3. Expressing yourself in a creative way.</p>
+
+        <p>4. Giving it your all.</p>
+
+        <p>5. Believing in yourself.</p>
+
+        <p>6. Giving birth to a baby, project or idea.</p>
+
+        <p>7. Potential for greatness.</p>
+
+        <p>8. Moving forward in a happy and healthy way.</p>
+
+
+        <h4 class="padding">Meanings</h4>
+
+        <p>The Ace of Wands speaks of new beginnings. Be bold and start something new. Follow your inspiration.
+          It speaks to birth of all kinds: birth of enterprises and job opportunities, but also the birth of a
+          baby. </p>
+
+        <p>The other cards in the spread will tell you in what area the querent is experiencing this birth. The Ace of Wands
+          also shows up when there is a great potential, but it is up to you to make this potential a
+          reality.</p>
+
+        <p>The Ace of Wands in a love readings indicates a passionate relationship.</p>
+
+        <p>In a career reading it signifies work with technology and tools. The Ace of Wands also denotes a new
+          and exciting job offer.</p>
+
+
+        <h4 class="padding">Personality Types</h4>
+
+        <p>The Ace of Wands suggests a very powerful spirit. This is someone who desires success in all areas, and
+          who incorporates creativity and spirituality in all of their pursuits. This is someone who makes things happen,
+          often against all odds. No matter how much is stacked up against them, they persevere, often with amazing
+          results. </p>
+
+        <p>They are very thoroughly individualistic. This is someone with a sense of wonder, and they live life
+          with passion. They are full of fresh ideas and don’t hesitate in moving forward.</p>
+      </div>
+
+
+      <div class="item item-divider large-icon green white ion-arrow-down-c" id="reversed">
+        Reversed
+      </div>
+      <div class="padding">
+        <h4 class="padding">Key Phrases</h4>
+
+        <p>1. Immature.</p>
+
+        <p>2. Poor timing.</p>
+
+        <p>3. Unmotivated.</p>
+
+
+        <h4 class="padding">Meanings</h4>
+
+        <p>The Ace of Wands reversed indicates that new beginnings are blocked. Ideas and enterprises do not take
+          hold, and there is little if any growth. Joy is clouded and stunted. Sometimes this card shows up reversed when there
+          are endings rather than beginnings. Rebirth is difficult with the reversed Ace of Wands.</p>
+
+        <p>Tip to the reader: When a reversed Ace of Wands is showing up in a reading your client might be ‘low’ in
+          vigor. They need to feel more excited about life. Help them find what they are ‘burning’ for. The cards will
+          help you with this, as the client might not yet know what they are seeking. </p>
+
+
+        <h4 class="padding">Personality Types</h4>
+
+        <p>A reversed Ace of Wands denotes someone who is hard to get motivated. Their creativity turns into
+          hoarding, and there is a mess everywhere. Very little is accomplished - instead more junk is added to the
+          growing mayhem. There is also a lack of originality. This is someone who copies others, and has little
+          faith in the future.
+        </p>
+
+        <p>They often yearn to go back to the past, and convince themselves that things used to be so much better in the good old
+          days. They need to learn to think outside the box and start appreciating the little things that life has got to
+          offer. This personality type wants to do everything at once, and will end up accomplishing little or nothing at all
+          instead. </p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon green white ion-image" id="symbolism">
+        Symbolism
+      </div>
+      <div class="padding">
+        <p>The hand issuing from the cloud and grasping the wand symbolises creation, invention and enterprise at an idea
+          level. The leaves carried away with the wind represent the wind behind your sails and moving forward.</p>
+
+        <p>The castle signifies ideas being materialised into something physical. The river symbolises flow, while the trees and
+          fields mean growth and abundance.</p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon green white ion-plus-round" id="combinations">
+        Combinations
+      </div>
+      <div class="padding">
+
+        <p>1. Ace of Wands + <a ui-sref="app.aceOfCups">Ace of Cups</a>: A new friendship.</p>
+
+        <p>2. Ace of Wands + <a ui-sref="app.fourOfCups">Four of Cups</a>: A new career direction. Searching for
+          something new.</p>
+
+        <p>3. Ace of Wands + <a ui-sref="app.eightOfCups">Eight of Cups</a>: A spiritual journey.</p>
+
+        <p>4. Ace of Wands + <a ui-sref="app.knightOfCups">Knight of Cups</a>: A chance meeting. A passionate affair.
+        </p>
+
+        <p>5. Ace of Wands + <a ui-sref="app.aceOfSwords">Ace of Swords</a>: A new job opportunity. A new relationship.
+        </p>
+
+        <p>6. Ace of Wands + <a ui-sref="app.sixOfSwords">Six of Swords</a>: New science. New method of thinking.</p>
+
+        <p>7. Ace of Wands + <a ui-sref="app.eightOfSwords">Eight of Swords</a>: Knowing what you want but confused
+          about how to get it.</p>
+
+        <p>8. Ace of Wands + <a ui-sref="app.pageOfSwords">Page of Swords</a>: A passionate and adventurous person.</p>
+
+        <p>9. Ace of Wands + <a ui-sref="app.kingOfSwords">King of Swords</a>: A new boss. A new authority in your life.
+        </p>
+
+        <p>10. Ace of Wands + <a ui-sref="app.aceOfPentacles">Ace of Pentacles</a>: A new business opportunity. A
+          business plan.</p>
+
+        <p>11. Ace of Wands + <a ui-sref="app.twoOfPentacles">Two of Pentacles</a>: Working with tools. Job
+          satisfaction.</p>
+
+        <p>12. Ace of Wands + <a ui-sref="app.fourOfPentacles">Four of Pentacles</a>: Investing in a business. Starting
+          a business.</p>
+
+        <p>13. Ace of Wands + <a ui-sref="app.fiveOfPentacles">Five of Pentacles</a>: Feeling low in vigor. Fatigue.
+        </p>
+
+        <p>14. Ace of Wands + <a ui-sref="app.pageOfPentacles">Page of Pentacles</a>: Studying something you are
+          passionate about.</p>
+
+        <p>15. Ace of Wands + <a ui-sref="app.knightOfPentacles">Knight of Pentacles</a>: A new exciting job.</p>
+
+        <p>16. Ace of Wands + <a ui-sref="app.fiveOfWands">Five of Wands</a>: Standing out in a positive way.</p>
+
+        <p>17. Ace of Wands + <a ui-sref="app.sixOfWands">Six of Wands</a>: Recognition for your talents.</p>
+
+        <p>18. Ace of Wands + <a ui-sref="app.knightOfWands">Knight of Wands</a>: Moving. Change of residence.</p>
+
+        <p>19. Ace of Wands + <a ui-sref="app.queenOfWands">Queen of Wands</a>: Entrepreneur.</p>
+
+        <p>20. Ace of Wands + <a ui-sref="app.theFool">The Fool</a>: New technology. Social media.</p>
+
+        <p>21. Ace of Wands + <a ui-sref="app.theMagician">The Magician</a>: A new passion. A new sale opportunity.</p>
+
+        <p>22. Ace of Wands + <a ui-sref="app.theLovers">The Lovers</a>: A new relationship. Falling in love.</p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon green white ion-ios-paper-outline" id="summary">
+        Summary
+      </div>
+      <div class="padding">
+        <p>The Ace of Wands indicates a time of opportunity. Seek and you shall find. There is more to
+          life than what you thought or believed. An adventure is about to present itself, and it might be the ride
+          of your lifetime.
+        </p>
+
+        <p>Life gives you choices, and the choices presented through the Ace of Wands are that you can either grab the wand or
+          pass it on. Look at the other cards in the spread for advice on what to do. This might be an opportunity you
+          want to grab with both hands.</p>
+      </div>
+
+    </ion-content>
+    <div class="float-button">
+ <span class="height-fix">
+    <a class="content" ng-click="scrollToTop()">
+      <i class="ion-ios-arrow-up"> </i>
+    </a>
+    </span>
+    </div>
+  </div>
+</ion-view>

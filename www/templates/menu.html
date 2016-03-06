@@ -1,0 +1,38 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="litegray">
+      <ion-nav-back-button class="button-clear button-icon">
+        <i class="ion-arrow-left-c large-icon"></i>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="litegray">
+      <h1 class="title">Menu</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close ui-sref="app.read"><a class="button icon-left ion-ios-help-outline button-clear button-dark">Reading</a></ion-item>
+        <ion-item menu-close ui-sref="app.encyclopedia"><a class="button icon-left button-clear button-dark"><img src="img/tarotCardsSmall.png"> Cards</a></ion-item>
+        <ion-item menu-close ui-sref="app.spreads"><a class="button icon-left button-clear button-dark"><img class="grey" src="img/tarotSpreadsSmall.png"> Spreads</a></ion-item>
+        <ion-item menu-close ui-sref="app.journal"><a class="button icon-left button-clear button-dark ion-ios-book-outline">Journal</a></ion-item>
+        <ion-item menu-close ui-sref="app.cardOfTheDay"><a class="button icon-left button-clear button-dark ion-ios-calendar-outline">Card of the Day</a></ion-item>
+        <ion-item menu-close ui-sref="app.options"><a class="button icon-left ion-ios-toggle-outline button-clear button-dark">Options</a></ion-item>
+        <ion-item menu-close ui-sref="app.contact"><a class="button icon-left ion-ios-email-outline button-clear button-dark">Contact</a></ion-item>
+        <!--<ion-item menu-close ui-sref="app.upgrade"><a class="button icon-left ion-ios-heart-outline button-clear button-dark">Upgrade</a></ion-item>-->
+        
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
+
+<!--<ion-item menu-close href="#/app/donate">
+  Donate
+</ion-item> -->

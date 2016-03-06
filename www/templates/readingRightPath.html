@@ -1,0 +1,99 @@
+<ion-view cache-view="false">
+  <div ng-controller="StorageCtrl">
+    <ion-content delegate-handle="mainScroll">
+
+      <div class="center">
+      <h3 ng-class="headerClass" class="center white padding">Right Path Reading</h3>
+        <div class="hidden-box">{{spreadURL='app.spreadRightPath'}} {{newDate | date:'MM-dd-yyyy'}} {{spread='Right Path'}} {{headerClass='teal'}}</div>
+      <form class="padding" ng-submit="slideTo('results')">
+      <input type="text" ng-model="newQuery" class="litegray centertextarea padding"
+                placeholder=" What is your query about?"></input>
+      </form>
+        <button class="button button-clear padding skip-button" ng-click="slideTo('results')">Skip
+        </button>
+
+
+        <button ng-click="slideTo('results')" ng-class="headerClass" class="button white large-icon center confirm-button">
+          Confirm
+        </button>
+
+      </div>
+
+
+      <div class="center below-fold">
+      <a ng-click="slideTo('layout')">
+        <img id="results" src="img/spreadRightPath.jpg">
+      </a>
+      </div>
+
+      <div ng-class="headerClass" class="item item-divider white large-icon">
+        Results
+      </div>
+
+      <ion-list>
+
+        <div ng-repeat="card in newReading = (cardNames | limitTo: 8)">
+
+         <div ng-hide="hideTrigger" class="padding-big"> <a class="remove-underline" href="#" ng-click="revealedCards=true; hideTrigger=true"> <img class="smallcard" ng-src="/img/blankCard.jpg"><div class="vertical-pad">{{$index + 1}}. Reveal</div></a> </div>
+
+          <div ng-show="revealedCards">
+          <ion-item class="button-full" ui-sref="{{card.cardURL}}">
+            <img class="smallcard" ng-src="{{card.cardImage}}"><div ng-init="card.cardName" class="vertical-pad">{{$index + 1}}. {{card.cardName}}</div>
+          </ion-item>
+          </div>
+
+
+        </div>
+
+
+      </ion-list>
+      <h3 ng-class="headerClass" class="white padding">
+        Notes
+      </h3>
+      <div class="center padding">
+      <form ng-submit="addSpread(newDate, notes, newReading, spread, headerClass, spreadURL, newQuery); clearNav(); scrollToTop()">
+      <input type ="text" ng-model="notes" class="litegray centertextarea padding"
+                placeholder=" Reflections on your reading..."></input>
+    </form>
+        <button nav-clear class="button button-clear padding skip-button" ng-click="clearNav(); scrollToTop()" ui-sref="app.read">Skip
+        </button>
+
+      <button ng-click="addSpread(newDate, notes, newReading, spread, headerClass, spreadURL, newQuery); clearNav(); scrollToTop()" ui-sref="app.journal" ng-class="headerClass" class="button white large-icon confirm-button">
+        Save Reading
+      </button>
+</div>
+      <div ng-class="headerClass" class="item item-divider white large-icon" id="layout">
+          Layout
+        </div>
+
+        <div class="padding">
+
+        <p>1.  Is the querent on the right path? If yes, go to card #2 and ignore cards #5 to #7. If no, go to card #5 and ignore cards #2 to #4.</p>
+
+        <p>2. Why the querent is on this path.</p>
+
+        <p>3. Influences or people acting in favor of further progress.</p>
+
+        <p>4. Influences or people acting against further progress.</p>
+
+        <p>5. What spiritual path should the querent be on?</p>
+
+        <p>6. Influences or people helpful to finding the correct path.</p>
+
+        <p>7. Influences or people detrimental to finding the correct path.</p>
+
+        <p>8.  How difficult this path will be for the querent.</p>
+
+        </div>
+
+        <div ng-class="headerClass" class="item item-divider white large-icon">
+          Reading
+        </div>
+        <div class="padding">
+          <p>An eight card spread that helps determine whether the querent is on the right path. If so, it looks at what the querent can do to help speed up progress, and if not, then it considers what the right path is and who/what can help or hinder progress in the right direction.</p>
+        </div>
+
+    </ion-content>
+
+  </div>
+</ion-view>

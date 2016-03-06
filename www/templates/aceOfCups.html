@@ -1,0 +1,213 @@
+<ion-view>
+  <div ng-controller="StorageCtrl">
+    <ion-content delegate-handle="mainScroll">
+      <h3 class="handwritten center padding-top large-font teal white">ACE OF CUPS</h3>
+      <a class="button button-block large-icon ion-arrow-up-c" ng-click="slideTo('upright')">
+        Upright
+      </a>
+      <a class="button button-block large-icon ion-arrow-down-c" ng-click="slideTo('reversed')">
+        Reversed
+      </a>
+      <a class="button button-block large-icon ion-image" ng-click="slideTo('symbolism')">
+        Symbolism
+      </a>
+      <a class="button button-block large-icon ion-plus-round" ng-click="slideTo('combinations')">
+        Combinations
+      </a>
+      <a class="button button-block large-icon ion-ios-paper-outline" ng-click="slideTo('summary')">
+        Summary
+      </a>
+
+      <div class="center padding">
+        <img src="img/aceOfCups.jpg">
+      </div>
+
+
+      <div class="item item-divider teal white large-icon ion-arrow-up-c" id="upright">
+        Upright
+      </div>
+      <div class="padding">
+        <h4 class="padding">Key Phrases</h4>
+
+        <p>1. A new relationship.</p>
+
+        <p>2. A creative pursuit.</p>
+
+        <p>3. Happiness. Feeling whole.</p>
+
+        <p>4. Being connected to your heart and soul.</p>
+
+        <p>5. Channeling. Intuition.</p>
+
+        <p>6. Seeking the deeper meaning of life.</p>
+
+        <p>7. Forgiveness.</p>
+
+
+        <h4 class="padding">Meanings</h4>
+
+        <p>The Ace of Cups is the tarot card for new love, compassion, joy and creativity. If this card shows up with
+          the Ace of
+          Pentacles it often denotes moving in together. The Ace of Cups speaks of emotional fulfillment.
+          If you are asking about a new job then this card will tell you that the new role is creative. When this card
+          shows up you can trust your intuition. The Ace of Cups can also mean forgiveness.</p>
+
+        <p>In a love reading the Ace of Cups tarot card denotes meeting someone who deeply understands you. It may also
+          mean
+          you will forgive someone, or receive forgiveness and have a renewal in relationships.</p>
+
+        <p>In a career reading the Ace of Cups signifies work in the beauty industry, tourism or hospitality.</p>
+
+
+        <h4 class="padding">Personality Types</h4>
+
+        <p>The Ace of Cups denotes a spiritual and empathic person. They follow their intuition and are creative people.
+          They make good decisions due to their instincts.
+          They listen to their inner voice. They believe home is where the heart is and once they find it they
+          rarely turn their back on it.</p>
+
+        <p>Ace of Cups people have a depth to them that gives them substance and wisdom beyond their years. They are
+          very romantic and joyful. They have an enormous ability to love, which radiates from them. They often have a
+          special light in their eyes. Many become healers and psychics.</p>
+      </div>
+
+
+      <div class="item item-divider large-icon teal white ion-arrow-down-c" id="reversed">
+        Reversed
+      </div>
+      <div class="padding">
+        <h4 class="padding">Key Phrases</h4>
+
+        <p>1. Anger, rage, hate.</p>
+
+        <p>2. Resentment.</p>
+
+        <p>3. Guilt.</p>
+
+
+        <h4 class="padding">Meanings</h4>
+
+        <p>The Ace of Cups tarot card reversed indicates blocked creativity and emotions. Access to the subconscious
+          mind and psychic ability is also blocked. The cup is spilled empty which can denote the querent being
+          emotionally drained. The reversed Ace of Cups often shows up when the querent needs to forgive
+          someone.</p>
+
+
+        <h4 class="padding">Personality Types</h4>
+
+        <p>A reversed Ace of Cups indicates someone that's engulfed in toxic emotions like guilt, resentment and
+          hatred. They are frustrated by their emotions and find it hard to concentrate. They are often so
+          stressed that they have no energy to stay connected to themselves or anyone else.
+        </p>
+
+        <p>This is someone drained and tired, and they often get up in the morning upset. They are afraid
+          of the truth and often turn to lies and manipulations. They feel alone and abandoned and wonder why they are
+          here. They appreciate little in their life and are left depressed and angry.</p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon teal white ion-image" id="symbolism">
+        Symbolism
+      </div>
+      <div class="padding">
+        <p>The five streams pouring out of the cup represent the five senses: sight, smell, hearing, taste and touch.
+          The hand that appears from the cloud represents the right hand of divinity. The
+          cloud symbolises movement and mutability.</p>
+
+        <p>The sky symbolises the unchangeable: eternity and the Infinite. The dove represents the cosmic nature within
+          everyone. The water represents our temporary human form. The sea
+          symbolises our group consciousness. The lotus flower represents good fortune and strong spirit.</p>
+      </div>
+
+
+      <div class="item item-divider large-icon teal white ion-plus-round" id="combinations">
+        Combinations
+      </div>
+      <div class="padding">
+
+        <p>1. Ace of Cups + <a ui-sref="app.aceOfPentacles">Ace of Pentacles</a>: Moving in with someone. Finding long
+          lasting love.</p>
+
+        <p>2. Ace of Cups + <a ui-sref="app.twoOfPentacles">Two of Pentacles</a>: Turning your career into a creative
+          venture.</p>
+
+        <p>3. Ace of Cups + <a ui-sref="app.threeOfPentacles">Three of Pentacles</a>: Loving your job. Creative job.</p>
+
+        <p>4. Ace of Cups + <a ui-sref="app.eightOfPentacles">Eight of Pentacles</a>: Art school. Learning a new
+          creative skill.</p>
+
+        <p>5. Ace of Cups + <a ui-sref="app.tenOfPentacles">Ten of Pentacles</a>: Original family.</p>
+
+        <p>6. Ace of Cups + <a ui-sref="app.pageOfPentacles">Page of Pentacles</a>: Physical beauty.</p>
+
+        <p>7. Ace of Cups + <a ui-sref="app.queenOfPentacles">Queen of Pentacles</a>: Interior design. A new home.</p>
+
+        <p>8. Ace of Cups + <a ui-sref="app.aceOfSwords">Ace of Swords</a>: Spiritual love.</p>
+
+        <p>9. Ace of Cups + <a ui-sref="app.fiveOfSwords">Five of Swords</a>: Sabotaging beliefs about love.</p>
+
+        <p>10. Ace of Cups + <a ui-sref="app.knightOfSwords">Knight of Swords</a>: An inspirational person.</p>
+
+        <p>11. Ace of Cups + <a ui-sref="app.queenOfSwords">Queen of Swords</a>: Hiding your feelings.</p>
+
+        <p>12. Ace of Cups + <a ui-sref="app.twoOfWands">Two of Wands</a>: Making an intuitive decision. Manifesting
+          love. Ready for love.</p>
+
+        <p>13. Ace of Cups + <a ui-sref="app.threeOfWands">Three of Wands</a>: Creative writing.</p>
+
+        <p>14. Ace of Cups + <a ui-sref="app.fourOfWands">Four of Wands</a>: A spiritual community.</p>
+
+        <p>15. Ace of Cups + <a ui-sref="app.tenOfWands">Ten of Wands</a>: A busy routine blocking creativity.</p>
+
+        <p>16. Ace of Cups + <a ui-sref="app.knightOfWands">Knight of Wands</a>: Spiritual teacher.</p>
+
+        <p>17. Ace of Cups + <a ui-sref="app.queenOfWands">Queen of Wands</a>: An artist.</p>
+
+        <p>18. Ace of Cups + <a ui-sref="app.twoOfCups">Two of Cups</a>: A new romance.</p>
+
+        <p>19. Ace of Cups + <a ui-sref="app.sixOfCups">Six of Cups</a>: Rekindled love.</p>
+
+        <p>20. Ace of Cups + <a ui-sref="app.queenOfCups">Queen of Cups</a>: Spiritual writing. Channeling.</p>
+
+        <p>21. Ace of Cups + <a ui-sref="app.kingOfCups">King of Cups</a>: Deep love.</p>
+
+        <p>22. Ace of Cups + <a ui-sref="app.theFool">The Fool</a>: Pregnancy.</p>
+
+        <p>23. Ace of Cups + <a ui-sref="app.theMagician">The Magician</a>: Beauty industry.</p>
+
+        <p>24. Ace of Cups + <a ui-sref="app.theHighPriestess">High Priestess</a>: Psychic powers. Being a medium.</p>
+
+        <p>25. Ace of Cups + <a ui-sref="app.theEmperor">The Emperor</a>: Emotional stability.</p>
+
+        <p>26. Ace of Cups + <a ui-sref="app.theDevil">The Devil</a>: Plastic surgery.</p>
+
+        <p>27. Ace of Cups + <a ui-sref="app.theChariot">The Chariot</a>: Being an island.</p>
+
+        <p>28. Ace of Cups + <a ui-sref="app.judgement">Judgement</a>: Forgiveness. Inner peace.</p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon teal white ion-ios-paper-outline" id="summary">
+        Summary
+      </div>
+      <div class="padding">
+        <p>The Ace of Cups reflects the potential to create something truly remarkable. There is
+          love flowing into your life, and it can arrive in ways you may not have been ready for. Suddenly you have the
+          opportunity to have something wonderful, which can scare a lot of people. Welcome it with open arms. Sometimes
+          we have to put ourselves out there more, and if you have received the Ace of Cups you are ready to receive
+          love, affection and a deeper connection.
+        </p>
+      </div>
+
+    </ion-content>
+    <div class="float-button">
+ <span class="height-fix">
+    <a class="content" ng-click="scrollToTop()">
+      <i class="ion-ios-arrow-up"> </i>
+    </a>
+    </span>
+    </div>
+  </div>
+</ion-view>

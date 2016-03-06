@@ -1,0 +1,211 @@
+<ion-view>
+  <div ng-controller="StorageCtrl">
+    <ion-content delegate-handle="mainScroll">
+      <h3 class="handwritten center padding-top large-font teal white">KING OF CUPS</h3>
+      <a class="button button-block large-icon ion-arrow-up-c" ng-click="slideTo('upright')">
+        Upright
+      </a>
+      <a class="button button-block large-icon ion-arrow-down-c" ng-click="slideTo('reversed')">
+        Reversed
+      </a>
+      <a class="button button-block large-icon ion-image" ng-click="slideTo('symbolism')">
+        Symbolism
+      </a>
+      <a class="button button-block large-icon ion-plus-round" ng-click="slideTo('combinations')">
+        Combinations
+      </a>
+      <a class="button button-block large-icon ion-ios-paper-outline" ng-click="slideTo('summary')">
+        Summary
+      </a>
+
+      <div class="center padding">
+        <img src="img/kingOfCups.jpg">
+      </div>
+
+
+      <div class="item item-divider teal white large-icon ion-arrow-up-c" id="upright">
+        Upright
+      </div>
+      <div class="padding">
+        <h4 class="padding">Key Phrases</h4>
+
+        <p>1. Being emotionally strong. Very diplomatic.</p>
+
+        <p>2. A very knowledgeable person.</p>
+
+        <p>3. A benevolent protector.</p>
+
+        <p>4. Having highly developed social skills.</p>
+
+        <p>5. A very well liked person.</p>
+
+        <p>6. Living an alternative lifestyle.</p>
+
+        <p>7. A friend you can count on.</p>
+
+        <p>8. Someone who defuses tense situations.</p>
+
+
+        <h4 class="padding">Meanings</h4>
+
+        <p>The King of Cups represents a warm, honest and generous person who is kind and fair. This is someone
+          who is in control over their own emotions. It communicates maturity in dealing with emotionally charged
+          people and situations. The King of Cups is balanced between the creative and logical sides, in touch with their
+          feminine side, without it ruining their masculinity.</p>
+
+        <p>In interpersonal situations the King of Cups denotes being diplomatic, mature and respectful, and getting the respect you
+          deserve in return. You will get respect and trust by giving respect and showing trust. If you show that you
+          believe in people they will want to make you proud. The King of Cups often shows up when you are about
+          to reach your highest potential. </p>
+
+        <p>In a love reading the King of Cups can mean falling in love with your best friend. If the querent is
+          single it means they most likely already know their soul mate and they will soon realize who this
+          person is. If in a relationship King of Cups denotes a deep friendship between the couple. Sometimes when King
+          of cups describes a relationship it can mean the couple is living an alternative lifestyle.</p>
+
+        <p>In a career reading the King of Cups can mean you are about to be recognised in a big way. King of Cups often
+          signifies careers at the top of the corporate world, possibly even CEO. It also suggests careers as
+          vets and doctors. </p>
+
+        <h4 class="padding">Personality Types</h4>
+
+        <p>The King of Cups personality is a benevolent protector, leader and mentor. They are affectionate and make
+          excellent colleagues, friends and partners (both romantically and in business). This is someone with highly
+          developed emotional and social qualities. They are also very intelligent and confident. </p>
+
+        <p>They are great with people and often find themselves in management and leadership positions. These
+          people are very spiritual and have great knowledge of different cultures and alternative lifestyles. They are
+          emphatic and intuitive which they use to succeed in business. They usually trust their instincts.</p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon teal white ion-arrow-down-c" id="reversed">
+        Reversed
+      </div>
+      <div class="padding">
+        <h4 class="padding">Key Phrases</h4>
+
+        <p>1. Cultural intolerance..</p>
+
+        <p>2. Attention seeking.</p>
+
+        <p>3. Malicious behaviour.</p>
+
+
+        <h4 class="padding">Meanings</h4>
+
+        <p>When the King of Cups is reversed it indicates someone who is blocked from expressing their feelings, and who is
+          unable to motivate others. This is someone with a selfish streak, often born from a fear of rejection. The
+          bottled up emotions can often be seen through weight gain, perverted behaviours and/or addictions. </p>
+
+        <p>There is an evil and merciless streak to the King of Cups reversed. It sometimes shows up in a
+          reading when there is a lack of positive leadership, and intolerance towards other cultures.</p>
+
+
+        <h4 class="padding">Personality Types</h4>
+
+        <p>Manipulative and jealous, the King of Cups reversed type people want to own others, and harvest love as if it were
+          a commodity. They are very selfish and need to be the center of attention. In relationships
+          they are demanding and controlling. They often turn into being a full-time job for their partners. King of
+          Cups reversed people make it all about them. They are needy and insecure.
+        </p>
+
+        <p>They play the guilt game with their partners, family and close friends to get their own way. They always have
+          a dissatisfied look on their face, looking about as miserable as they feel. If they can’t have something, they
+          don’t want anyone else to have it either. When reversed, the King of Cups can signify very childish people, turning their
+          romantic partners into parents.</p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon teal white ion-image" id="symbolism">
+        Symbolism
+      </div>
+      <div class="padding">
+
+        <p>The grey stone throne in the midst of turbulent sea symbolises emotional strength. The King's fish amulet represents
+          the depths of his knowledge. The fish that jumps out of water on his right side signals his ideas and
+          creativity. The ship on his left side relates his ability to navigate in emotional territory. His yellow
+          and red cape illustrate the balance between his passion and intellect. His blue cloak signifies his
+          wisdom.</p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon teal white ion-plus-round" id="combinations">
+        Combinations
+      </div>
+      <div class="padding">
+
+        <p>1. King of Cups + <a ui-sref="app.theChariot">The Chariot</a>: Recognition at work.</p>
+
+        <p>2. King of Cups + <a ui-sref="app.theHermit">The Hermit</a>: A journalist.</p>
+
+        <p>3. King of Cups + <a ui-sref="app.death">Death</a>: Possessive.</p>
+
+        <p>4. King of Cups + <a ui-sref="app.temperance">Temperance</a>: A diplomat.</p>
+
+        <p>5. King of Cups + <a ui-sref="app.theMoon">The Moon</a>: A designer. Movie director.</p>
+
+        <p>6. King of Cups + <a ui-sref="app.aceOfCups">Ace of Cups</a>: Deep love.</p>
+
+        <p>7. King of Cups + <a ui-sref="app.sevenOfCups">Seven of Cups</a>: A marketing genius. A writer.</p>
+
+        <p>8. King of Cupss + <a ui-sref="app.eightOfCups">Eight of Cups</a>: A healer.</p>
+
+        <p>9. King of Cups + <a ui-sref="app.nineOfCups">Nine of Cups</a>: A high-ranking officer.
+        </p>
+
+        <p>10. King of Cups + <a ui-sref="app.tenOfCups">Ten of Cups</a>: Your father.</p>
+
+        <p>11. King of Cups + <a ui-sref="app.aceOfPentacles">Ace of Pentacles</a>: A health professional. A doctor.</p>
+
+        <p>12. King of Cups + <a ui-sref="app.twoOfPentacles">Two of Pentacles</a>: Advisory.</p>
+
+        <p>13. King of Cups + <a ui-sref="app.fiveOfPentacles">Five of Pentacles</a>: A doctor.</p>
+
+        <p>14. King of Cups + <a ui-sref="app.nineOfPentacles">Nine of Pentacles</a>: A talented business man.
+        </p>
+
+        <p>15. King of Cups + <a ui-sref="app.tenOfPentacles">Ten of Pentacles</a>: Family friend.
+        </p>
+
+        <p>16. King of Cups + <a ui-sref="app.sevenOfPentacles">Seven of Pentacles</a>: Philosopher.</p>
+
+        <p>17. King of Cups + <a ui-sref="app.eightOfWands">Eight of Wands</a>: Business travel.</p>
+
+        <p>18. King of Cups + <a ui-sref="app.nineOfWands">Nine of Wands</a>: Fear of rejection.</p>
+
+        <p>19. King of Cups + <a ui-sref="app.tenOfWands">Ten of Wands</a>: Working hard for success.</p>
+
+        <p>20. King of Cups + <a ui-sref="app.fourOfSwords">Four of Swords</a>: Health care expert.</p>
+
+        <p>21. King of Cups + <a ui-sref="app.sevenOfSwords">Seven of Swords</a>: Applying yourself in an unusual way.</p>
+
+        <p>22. King of Cups + <a ui-sref="app.nineOfSwords">Nine of Swords</a>: Lack of motivation.</p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon teal white ion-ios-paper-outline" id="summary">
+        Summary
+      </div>
+      <div class="padding">
+        <p>King of Cups expresses achieving at the highest level. This is the card for reaching your ambitions.
+          You are living your true nature through your career and relationships when the King of Cups shows
+          up. You might face other peoples jealousy because you make everything look easy. What they don’t see is all the work
+          you’ve invested in yourself to get to where you are today.
+        </p>
+      </div>
+
+    </ion-content>
+    <div class="float-button">
+ <span class="height-fix">
+    <a class="content" ng-click="scrollToTop()">
+      <i class="ion-ios-arrow-up"> </i>
+    </a>
+    </span>
+    </div>
+  </div>
+</ion-view>

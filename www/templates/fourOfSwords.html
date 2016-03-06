@@ -1,0 +1,220 @@
+<ion-view>
+  <div ng-controller="StorageCtrl">
+    <ion-content delegate-handle="mainScroll">
+      <h3 class="handwritten center padding-top large-font red white">FOUR OF SWORDS</h3>
+      <a class="button button-block large-icon ion-arrow-up-c" ng-click="slideTo('upright')">
+        Upright
+      </a>
+      <a class="button button-block large-icon ion-arrow-down-c" ng-click="slideTo('reversed')">
+        Reversed
+      </a>
+      <a class="button button-block large-icon ion-image" ng-click="slideTo('symbolism')">
+        Symbolism
+      </a>
+      <a class="button button-block large-icon ion-plus-round" ng-click="slideTo('combinations')">
+        Combinations
+      </a>
+      <a class="button button-block large-icon ion-ios-paper-outline" ng-click="slideTo('summary')">
+        Summary
+      </a>
+
+      <div class="center padding">
+        <img src="img/fourOfSwords.jpg">
+      </div>
+
+
+      <div class="item item-divider red white large-icon ion-arrow-up-c" id="upright">
+        Upright
+      </div>
+      <div class="padding">
+        <h4 class="padding">Key Phrases</h4>
+
+        <p>1. Peace and quiet.</p>
+
+        <p>2. Meditation.</p>
+
+        <p>3. Rest. Taking time out.</p>
+
+        <p>4. The end of a conflict.</p>
+
+        <p>5. A place where you can have rest.</p>
+
+        <p>6. A placid and calm nature.</p>
+
+        <p>7. Getting enough sleep.</p>
+
+        <p>8. Finding peace and rejuvenation in a relationship.</p>
+
+
+        <h4 class="padding">Meanings</h4>
+
+        <p>The Four of Swords is about rest and rejuvenation, getting enough sleep and taking time out to
+          meditate. Sometimes we only get enough rest when we are forced to take time out, so have a look at the other
+          cards in the spread to see if the rest you are getting is due to lifestyle or due to accumulated stress that
+          has collapsed on itself.</p>
+
+        <p>In a love reading the Four of Swords can indicate a long term relationship where the couple has grown
+          to be like one person instead of two. If the querent is single it can mean he/she is at peace with being on
+          their own, and may prefer it that way.</p>
+
+        <p>In a career reading the Four of Swords signifies administrative work, legal work or a health care
+          worker. </p>
+
+
+        <h4 class="padding">Personality Types</h4>
+
+        <p>The Four of Swords indicates someone who is calm, non-confrontational and placid. They have learned to
+          get along with almost anyone, and make great partners and friends. Few things upset them. In conflicts they
+          work towards a peaceful resolution that will benefit everyone. They prefer a simple life and avoid busy places
+          and crowds.</p>
+
+        <p>This is someone who needs peace and quiet to reflect and gather their thoughts. They seek relief from stress
+          and will not function properly without enough sleep. They love taking breaks where they day-dream and ponder
+          about life. They love spiritual activities.</p>
+      </div>
+
+
+      <div class="item item-divider large-icon red white ion-arrow-down-c" id="reversed">
+        Reversed
+      </div>
+      <div class="padding">
+        <h4 class="padding">Key Phrases</h4>
+
+        <p>1. Restlessness.</p>
+
+        <p>2. Burn-outs.</p>
+
+        <p>3. Lack of progress.</p>
+
+
+        <h4 class="padding">Meanings</h4>
+
+        <p>The Four of Swords reversed signals restlessness and burning out. Thoughts and beliefs interrupt the
+          person from recuperating. When the Four of Swords is reversed sometimes people have injuries that prevent
+          them from getting comfortable, or the querent needs constant stimulation to feel at peace. It can also mean
+          there is a lack of progress in the querent's life. Procrastination is indicated.</p>
+
+
+        <h4 class="padding">Personality Types</h4>
+
+        <p>The Four of Swords reversed indicates someone who is unable to relax. There are often problems in personal
+          relationships. They are always very busy, but get little done. Their minds are full of clutter which is often
+          mirrored in their homes, that are also messy. They long for a good nights sleep and harmonious
+          relationships.
+        </p>
+
+        <p>They often settle for less than they deserve, however there is not enough clarity in their minds to deal
+          with issues appropriately. Therefore they often end up staying where they are, feeling ill at ease.</p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon red white ion-image" id="symbolism">
+        Symbolism
+      </div>
+      <div class="padding">
+
+        <p>The knight laying on a tomb symbolises rejuvenation. The three Swords pointing downwards represent the
+          resolution of the pain seen in the Three of Swords. The horizontal sword represents the term ‘burying of the
+          hatchet’, conveying past conflicts that have been resolved. The stained glass is decorated with an image of
+          a woman and a child, signifying the birth of new ideas and creativity when the rest period is over.</p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon red white ion-plus-round" id="combinations">
+        Combinations
+      </div>
+      <div class="padding">
+
+        <p>1. Four of Swords + <a ui-sref="app.theMagician">The Magician</a>: Long term relationship.</p>
+
+        <p>2. Four of Swords + <a ui-sref="app.theEmpress">The Empress</a>: A peaceful home.</p>
+
+        <p>3. Four of Swords + <a ui-sref="app.theHierophant">The Hierophant</a>: Doing what is expected.</p>
+
+        <p>4. Four of Swords + <a ui-sref="app.theChariot">The Chariot</a>: A quiet achiever.</p>
+
+        <p>5. Four of Swords + <a ui-sref="app.theHermit">The Hermit</a>: Growing old with someone.</p>
+
+        <p>6. Four of Swords + <a ui-sref="app.justice">Justice</a>: Seeking extreme balance.</p>
+
+        <p>7. Four of Swords + <a ui-sref="app.theHangedMan">The Hanged Man</a>: Avoiding making a decision.</p>
+
+        <p>8. Four of Swords + <a ui-sref="app.death">Death</a>: Restlessness.</p>
+
+        <p>9. Four of Swords + <a ui-sref="app.judgement">Judgement</a>: Seeing the truth about people.</p>
+
+        <p>10. Four of Swords + <a ui-sref="app.aceOfWands">Ace of Wands</a>: Focusing on a new beginning.</p>
+
+        <p>11. Four of Swords + <a ui-sref="app.fourOfWands">Four of Wands</a>: A community where everyone knows your
+          name.</p>
+
+        <p>12. Four of Swords + <a ui-sref="app.sevenOfWands">Seven of Wands</a>: Health care.</p>
+
+        <p>13. Four of Swords + <a ui-sref="app.eightOfWands">Eight of Wands</a>: The internet. Telecom.</p>
+
+        <p>14. Four of Swords + <a ui-sref="app.tenOfWands">Ten of Wands</a>: Night shifts. Shift work.
+        </p>
+
+        <p>15. Four of Swords + <a ui-sref="app.aceOfCups">Ace of Cups</a>: Spiritual healing.</p>
+
+        <p>16. Four of Swords + <a ui-sref="app.twoOfCups">Two of Cups</a>: Finding the one.
+        </p>
+
+        <p>17. Four of Swords + <a ui-sref="app.fourOfCups">Four of Cups</a>: Repeating an old pattern.</p>
+
+        <p>18. Four of Swords + <a ui-sref="app.eightOfCups">Eight of Cups</a>: Retreat.</p>
+
+        <p>19. Four of Swords + <a ui-sref="app.knightOfCups">Knight of Cups</a>: A beautiful mind.</p>
+
+        <p>20. Four of Swords + <a ui-sref="app.queenOfCups">Queen of Cups</a>: Nursing.</p>
+
+        <p>21. Four of Swords + <a ui-sref="app.kingOfCups">King of Cups</a>: Health care expert.</p>
+
+        <p>22. Four of Swords + <a ui-sref="app.aceOfPentacles">Ace of Pentacles</a>: Your savings.</p>
+
+        <p>23. Four of Swords + <a ui-sref="app.twoOfPentacles">Two of Pentacles</a>: A hotel. A reception.</p>
+
+        <p>24. Four of Swords + <a ui-sref="app.fiveOfPentacles">Five of Pentacles</a>: The necessities.</p>
+
+        <p>25. Four of Swords + <a ui-sref="app.eightOfPentacles">Eight of Pentacles</a>: Admin internship. Computer
+          science.</p>
+
+        <p>26. Four of Swords + <a ui-sref="app.pageOfSwords">Page of Swords</a>: A natural therapist. Natural therapy.
+          A healer.
+        </p>
+
+        <p>27. Four of Swords + <a ui-sref="app.queenOfSwords">Queen of Swords</a>: A professor. Study.</p>
+
+
+      </div>
+
+
+      <div class="item item-divider large-icon red white ion-ios-paper-outline" id="summary">
+        Summary
+      </div>
+      <div class="padding">
+        <p>When the Four of Swords shows in your cards take a look at the company you keep. You are blessed with someone
+          very special - someone who calms you down to give you peace of mind (though if you get Four of Swords reversed it is
+          the opposite).
+        </p>
+
+        <p>
+          The Four of Swords often speak of the types of situations where we have the time to create
+          something incredible. It is very hard to create when we are stressed and out of sorts. Being creative takes up
+          a lot of energy - it is hard work! It is the kind of hard work we can only accomplish when we are meditative
+          and calm. The Four of Swords encourages such an environment.
+        </p>
+      </div>
+
+    </ion-content>
+    <div class="float-button">
+ <span class="height-fix">
+    <a class="content" ng-click="scrollToTop()">
+      <i class="ion-ios-arrow-up"> </i>
+    </a>
+    </span>
+    </div>
+  </div>
+</ion-view>

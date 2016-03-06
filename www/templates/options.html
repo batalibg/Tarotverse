@@ -1,0 +1,19 @@
+<ion-view>
+  <ion-content>
+  <h3 class="handwritten center padding-top large-font grey">OPTIONS</h3>
+<div ng-controller="NotificationController">
+    <ion-toggle toggle-class="toggle-stable" ng-model="pushNotification"
+                ng-change="pushNotificationChange(pushNotification)">
+      Card of the Day Notification
+    </ion-toggle>
+
+    <pre class="hidden-box" ng-bind="pushNotification"></pre>
+</div>
+<div class="paddin center vertical-pad" ng-controller="StorageCtrl">
+    <button ng-click="showDeleteConfirm()" class="button white large-icon grey-background icon-left ion-ios-trash-outline">
+            Clear Journal
+          </button>
+</div>
+  </ion-content>
+
+</ion-view>

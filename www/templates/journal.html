@@ -1,0 +1,48 @@
+<ion-view>
+  <div ng-controller="StorageCtrl">
+    <ion-content delegate-handle="mainScroll">
+      <h3 class="handwritten center padding-top large-font grey">JOURNAL</h3>
+<div class ="padding center" ng-hide="readings.length > 0">
+    You have no journal entries, would you like to do a <a ng-click="clearNav(); scrollToTop()" ui-sref="app.read">reading?</a>
+</div>
+      <div class="card" ng-repeat="reading in readings | orderBy: '-'">
+
+      
+        <div ng-class="reading.headerClass" class="item white item-divider" slider-toggle>
+          {{reading.readingDate | date:'EEEE, MMMM d, y h:mm:ss a'}}
+        </div>
+        <div slider>
+
+          <div style="padding: 10px 10px 10px 20px;"><strong></strong> {{reading.query}}</div>
+
+          <div style="padding: 0 0 10px 20px;"><strong></strong> <a
+            ui-sref="{{reading.spreadURL}}">{{reading.spread}}</a>
+          </div>
+
+          <div style="padding: 0 10px 10px 20px;"><strong></strong> {{reading.notes}}</div>
+
+          <div ng-repeat="readingNestedArray in reading.readingDealtInfo track by $index">
+
+
+            <ion-item class="button-full" ui-sref="{{readingNestedArray.cardURL}}"><img class="smallcard"
+                                                                                        ng-src="{{readingNestedArray.cardImage}}">
+
+              <div class="vertical-pad">{{$index + 1}}. {{readingNestedArray.cardName}}</div>
+            </ion-item>
+
+          </div>
+         
+        </div>
+
+      </div>
+
+    </ion-content>
+    <div class="float-button">
+ <span class="height-fix">
+    <a class="content" ng-click="scrollToTop()">
+      <i class="ion-ios-arrow-up"> </i>
+    </a>
+    </span>
+    </div>
+  </div>
+</ion-view>

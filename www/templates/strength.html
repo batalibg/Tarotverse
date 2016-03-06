@@ -1,0 +1,210 @@
+<ion-view>
+  <div ng-controller="StorageCtrl">
+    <ion-content delegate-handle="mainScroll">
+      <h3 class="handwritten center padding-top large-font plum white">STRENGTH</h3>
+      <a class="button button-block large-icon ion-arrow-up-c" ng-click="slideTo('upright')">
+        Upright
+      </a>
+      <a class="button button-block large-icon ion-arrow-down-c" ng-click="slideTo('reversed')">
+        Reversed
+      </a>
+      <a class="button button-block large-icon ion-planet" ng-click="slideTo('astrology')">
+        Astrology
+      </a>
+      <a class="button button-block large-icon ion-image" ng-click="slideTo('symbolism')">
+        Symbolism
+      </a>
+      <a class="button button-block large-icon ion-plus-round" ng-click="slideTo('combinations')">
+        Combinations
+      </a>
+      <a class="button button-block large-icon ion-ios-paper-outline" ng-click="slideTo('summary')">
+        Summary
+      </a>
+
+      <div class="center padding">
+        <img src="img/strength.jpg">
+      </div>
+
+
+      <div class="item item-divider plum white large-icon ion-arrow-up-c" id="upright">
+        Upright
+      </div>
+      <div class="padding">
+        <h4 class="padding">Key Phrases</h4>
+
+        <p>1. Patience through caring.</p>
+
+        <p>2. A spiritual nature.</p>
+
+        <p>3. Inner strength.</p>
+
+        <p>4. Passion and love.</p>
+
+        <p>5. Pride and determination.</p>
+
+        <p>6. Self-Control.</p>
+
+        <p>7. Courage.</p>
+
+        <p>8. Compassion.</p>
+
+
+        <h4 class="padding">Meanings</h4>
+
+        <p>The Strength card represents our courage, passions, self-confidence, patience and compassion.
+          It reminds us to follow our passions, to take time to do the things that makes us tick, and develop the inner strength which builds confidence and self-worth. As the woman in the picture is taming the
+          lion, we are reminded that anything is possible as long as we believe in ourselves, are patient and use love
+          rather than force. Kindness, leadership and love is what will get you there. Strength reminds you that you are
+          strong enough to be loving and caring, even when others are acting as if they don’t care. Deep down they do,
+          and you know they do. You are someone they look up to, so keep showing them how well it can flow when you
+          apply love and tenderness to a situation.</p>
+
+        <p>In a love reading Strength indicates passionate love.</p>
+
+        <p> In a career reading Strength denotes careers with animals and caring for vulnerable people. </p>
+
+        <h4 class="padding">Personality Types</h4>
+
+        <p>Strength indicates someone with great inner fortitude and leadership. This is someone with plenty
+          of passions and hobbies. Caring for others is second nature to them. It is not even something they do it is
+          just who they are! They forgive easily, as they are very confident people. On top of that they are kind and
+          gentle. These people are patient, balanced, soft, sensitive, passionate and fun. They are unique people who
+          are often eccentric and artistic, exploring life through their big philanthropic hearts.</p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon plum white ion-arrow-down-c" id="reversed">
+        Reversed
+      </div>
+      <div class="padding">
+        <h4 class="padding">Key Phrases</h4>
+
+        <p>1. Anger</p>
+
+        <p>2. Jealousy.</p>
+
+        <p>3. Fear.</p>
+
+
+        <h4 class="padding">Meanings</h4>
+
+        <p>When reversed, Strength embodies a lack of courage, an absence of passion, actively fearful, or even timidity and impatience.
+          Weak will and lack of backbone are indicated when this card shows up reversed. The lion remains untamed, often
+          due to a fear of standing out due to peer pressure. The querent remains a sheep. Sometimes the fear is too
+          strong, and willpower alone isn’t going to work. The beast is in control and the querent needs help and
+          support, often of the professional kind. There is a need to connect to life in a more spiritual way.</p>
+
+
+        <h4 class="padding">Personality Types</h4>
+
+        <p>Strength reversed reflects someone who has lost their mojo. They feel depressed and bored,
+          withdrawn and out of touch with themselves. Rather than caring for others, they get drained by the company of others,
+          and would much rather be by themselves. This is someone with anxiety and overwhelming stress. Life is no longer fun,
+          and after spending time with this person, you will feel depressed too. Strength reversed is someone entangled
+          in negativity, with no substantial means of changing. They have lost their hunger for life and forgotten their
+          passions.</p>
+      </div>
+
+      <div class="item item-divider large-icon plum white ion-planet" id="astrology">
+        Astrology
+      </div>
+      <div class="padding">
+        <p>Strength is ruled by Leo. Leo is ruled by the Sun. The Sun rules our will, our pride, our
+          determination, our heart, health and vitality. It is an intensely masculine force. It also rules how others see
+          us, public recognition and self-esteem. The Sun clarifies the truths and characteristics of the other planets
+          it touches, so Strength therefore augments the other Major Arcana cards in the spread, and magnifies their
+          significance, especially the Wheel of Fortune and Temperance due to their Jupiter connection. The Sun and Jupiter
+          communicate in a special configuration, so the benefits are intensified. The Sun guards the heart.</p>
+      </div>
+
+      <div class="item item-divider large-icon plum white ion-image" id="symbolism">
+        Symbolism
+      </div>
+      <div class="padding">
+        <p>The infinity symbol above the woman’s head indicates a spiritual nature. The woman personifies inner strength.
+          The lion intimates courage, passion and desire, as well as our wild nature, while the woman represents
+          kindness and compassion, the ingredients to inner strength. Her white robe refers to the higher feminine
+          aspect of the soul.
+        </p>
+
+        <p>The crown and belt made out of roses are a symbol of love and the calm nature of the woman’s spirit. The mountain
+          in the background represents stability and loyalty, the distant goal that will be accomplished through effort
+          and patience.</p>
+
+        <p>The blue color of the mountain marks stability.</p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon plum white ion-plus-round" id="combinations">
+        Combinations
+      </div>
+      <div class="padding">
+
+        <p>1. Strength + <a ui-sref="app.theMagician">The Magician</a>: A strong communicator. Talent in sales.</p>
+
+        <p>2. Strength + <a ui-sref="app.theHermit">The Hermit</a>: Old soul. A courageous teacher.</p>
+
+        <p>3. Strength + <a ui-sref="app.justice">Justice</a>: Strict laws. Strong legal team.</p>
+
+        <p>4. Strength + <a ui-sref="app.theMoon">The Moon</a>: Important story. Documentary.</p>
+
+        <p>5. Strength + <a ui-sref="app.theSun">The Sun</a>: Strong life force. Healing.</p>
+
+        <p>6. Strength + <a ui-sref="app.aceOfPentacles">Ace of Pentacles</a>: Passionate about your finances.</p>
+
+        <p>7. Strength + <a ui-sref="app.threeOfPentacles">Three of Pentacles</a>: A strong team.</p>
+
+        <p>8. Strength + <a ui-sref="app.fiveOfPentacles">Five of Pentacles</a>: Helping others. Hardship making you strong.</p>
+
+        <p>9. Strength + <a ui-sref="app.tenOfPentacles">Ten of Pentacles</a>: A strong family.</p>
+
+        <p>10. Strength + <a ui-sref="app.aceOfCups">Ace of Cups</a>: A strong spirit. Having a heart of gold.</p>
+
+        <p>11. Strength + <a ui-sref="app.twoOfCups">Two of Cups</a>: A strong relationship.</p>
+
+        <p>12. Strength + <a ui-sref="app.fourOfCups">Four of Cups</a>: A strong administration.</p>
+
+        <p>13. Strength + <a ui-sref="app.nineOfCups">Nine of Cups</a>: Living your dream.</p>
+
+        <p>14. Strength + <a ui-sref="app.fourOfWands">Four of Wands</a>: A strong community.</p>
+
+        <p>15. Strength + <a ui-sref="app.sixOfWands">Six of Wands</a>: A confident person. A strong leader.</p>
+
+        <p>16. Strength + <a ui-sref="app.pageOfWands">Page of Wands</a>: A strong personality.</p>
+
+        <p>17. Strength + <a ui-sref="app.queenOfWands">Queen of Wands</a>: A strong and charismatic business man.</p>
+
+        <p>18. Strength + <a ui-sref="app.aceOfSwords">Ace of Swords</a>: Strong opinions.</p>
+
+        <p>19. Strength + <a ui-sref="app.threeOfSwords">Three of Swords</a>: Strong heartache. Long lasting pain.</p>
+
+        <p>20. Strength + <a ui-sref="app.fiveOfSwords">Five of Swords</a>: Phobias. Deep fears.</p>
+
+        <p>21. Strength + <a ui-sref="app.nineOfSwords">Nine of Swords</a>: Worrying about those you love.</p>
+
+        <p>22. Strength + <a ui-sref="app.pageOfSwords">Page of Swords</a>: A strong talent.</p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon plum white ion-ios-paper-outline" id="summary">
+        Summary
+      </div>
+      <div class="padding">
+        <p>The Strength card relates to our passion and inner strength. This card means sticking up for those who need
+          extra support. Strength also signifies your anchor in life.
+        </p>
+      </div>
+
+    </ion-content>
+    <div class="float-button">
+ <span class="height-fix">
+    <a class="content" ng-click="scrollToTop()">
+      <i class="ion-ios-arrow-up"> </i>
+    </a>
+    </span>
+    </div>
+  </div>
+</ion-view>

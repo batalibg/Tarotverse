@@ -1,0 +1,109 @@
+<ion-view cache-view="false">
+  <div ng-controller="StorageCtrl">
+    <ion-content delegate-handle="mainScroll">
+
+      <div class="center">
+      <h3 ng-class="headerClass" class="center white padding">Soulmate? Reading</h3>
+        <div class="hidden-box">{{spreadURL='app.spreadSoulmate'}} {{newDate | date:'MM-dd-yyyy'}} {{spread='Soulmate?'}} {{headerClass='red'}}</div>
+      <form class="padding" ng-submit="slideTo('results')">
+      <input type="text" ng-model="newQuery" class="litegray centertextarea padding"
+                placeholder=" What is your query about?"></input>
+      </form>
+        <button class="button button-clear padding skip-button" ng-click="slideTo('results')">Skip
+        </button>
+
+
+        <button ng-click="slideTo('results')" ng-class="headerClass" class="button white large-icon center confirm-button">
+          Confirm
+        </button>
+
+      </div>
+
+
+      <div class="center below-fold">
+      <a ng-click="slideTo('layout')">
+        <img id="results" src="img/spreadSoulmate.jpg">
+      </a>
+      </div>
+
+      <div ng-class="headerClass" class="item item-divider white large-icon">
+        Results
+      </div>
+
+      <ion-list>
+
+        <div ng-repeat="card in newReading = (cardNames | limitTo: 8)">
+
+         <div ng-hide="hideTrigger" class="padding-big"> <a class="remove-underline" href="#" ng-click="revealedCards=true; hideTrigger=true"> <img class="smallcard" ng-src="/img/blankCard.jpg"><div class="vertical-pad">{{$index + 1}}. Reveal</div></a> </div>
+
+          <div ng-show="revealedCards">
+          <ion-item class="button-full" ui-sref="{{card.cardURL}}">
+            <img class="smallcard" ng-src="{{card.cardImage}}"><div ng-init="card.cardName" class="vertical-pad">{{$index + 1}}. {{card.cardName}}</div>
+          </ion-item>
+          </div>
+
+
+        </div>
+
+
+      </ion-list>
+      <h3 ng-class="headerClass" class="white padding">
+        Notes
+      </h3>
+      <div class="center padding">
+      <form ng-submit="addSpread(newDate, notes, newReading, spread, headerClass, spreadURL, newQuery); clearNav(); scrollToTop()">
+      <input type ="text" ng-model="notes" class="litegray centertextarea padding"
+                placeholder=" Reflections on your reading..."></input>
+    </form>
+        <button nav-clear class="button button-clear padding skip-button" ng-click="clearNav(); scrollToTop()" ui-sref="app.read">Skip
+        </button>
+
+      <button ng-click="addSpread(newDate, notes, newReading, spread, headerClass, spreadURL, newQuery); clearNav(); scrollToTop()" ui-sref="app.journal" ng-class="headerClass" class="button white large-icon confirm-button">
+        Save Reading
+      </button>
+</div>
+      <div ng-class="headerClass" class="item item-divider white large-icon" id="layout">
+          Layout
+        </div>
+
+        <div class="padding">
+
+        <p>1. Are they a soulmate?</p>
+
+        <p>2. Will they be a friend?</p>
+
+        <p>3. Will they be a lover?</p>
+
+        <p>4. Why they have been brought into the querent's life.</p>
+
+        <p>5. Why the querent has been brought into their life.</p>
+
+        <p>6. What can the querent do to help (or be ready for) this person (to) become part of their life?</p>
+
+        <p>7. What does this person need to do before they are ready to become part of the querent's life?</p>
+
+        <p>8. The potential of the relationship.</p>
+
+        </div>
+
+        <div ng-class="headerClass" class="item item-divider white large-icon">
+          Reading
+        </div>
+        <div class="padding">
+          <p>An eight card spread that investigates whether a new relationship is with a soulmate, and whether they will be a friend, love, pupil or mentor.</p>
+        </div>
+
+        <div ng-class="headerClass" class="item item-divider white large-icon">
+          Insights
+        </div>
+        <div class="padding">
+          <p>If the answer to question one is an unequivocal "no", the spread can still be used to examine the potential
+          of the relationship.</p>
+        </div>
+
+
+
+    </ion-content>
+
+  </div>
+</ion-view>

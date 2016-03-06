@@ -1,0 +1,39 @@
+<ion-view>
+  <div ng-controller="StorageCtrl">
+    <ion-content delegate-handle="mainScroll">
+    <h3 class="handwritten center padding-top grey">CARD OF THE DAY</h3>
+      <div class="hidden-box">{{newDate | date:'MM-dd-yyyy'}} {{spread='Card of the Day'}} {{headerClass='grey-background'}}</div>
+
+      <div ng-repeat="card in newReading = (cardNames | limitTo: 1)">
+
+        <div class="center padding">
+          <a ui-sref="{{card.cardURL}}"><img ng-src="{{card.cardImage}}">
+
+            <div ng-init="card.cardName" class="padding"> {{card.cardName}}
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <div ng-class="headerClass" class="padding white item item-divider large-icon">
+        Notes
+      </div>
+      <div class="center vertical-pad padding">
+      <form>
+      <input type="text" ng-model="notes" class="litegray centertextarea padding" 
+                placeholder=" What do you think of your card today?"></input>
+      </form>
+        <button class="button button-clear padding skip-button" ui-sref="app.read">Skip
+        </button>
+
+        <button ng-click="addCardOfTheDay(newDate, notes, newReading, spread, headerClass); clearNav(); scrollToTop()" ui-sref="app.journal"
+                class="button large-icon grey confirm-button">
+          Save Card
+        </button>
+      </div>
+
+    </ion-content>
+
+  </div>
+</ion-view>

@@ -1,0 +1,209 @@
+<ion-view>
+  <div ng-controller="StorageCtrl">
+    <ion-content delegate-handle="mainScroll">
+      <h3 class="handwritten center padding-top large-font orange white">ACE OF PENTACLES</h3>
+      <a class="button button-block large-icon ion-arrow-up-c" ng-click="slideTo('upright')">
+        Upright
+      </a>
+      <a class="button button-block large-icon ion-arrow-down-c" ng-click="slideTo('reversed')">
+        Reversed
+      </a>
+      <a class="button button-block large-icon ion-image" ng-click="slideTo('symbolism')">
+        Symbolism
+      </a>
+      <a class="button button-block large-icon ion-plus-round" ng-click="slideTo('combinations')">
+        Combinations
+      </a>
+      <a class="button button-block large-icon ion-ios-paper-outline" ng-click="slideTo('summary')">
+        Summary
+      </a>
+
+      <div class="center padding">
+        <img src="img/aceOfPentacles.jpg">
+      </div>
+
+
+      <div class="item item-divider orange white large-icon ion-arrow-up-c" id="upright">
+        Upright
+      </div>
+      <div class="padding">
+        <h4 class="padding">Key Phrases</h4>
+
+        <p>1. New job opportunity.</p>
+
+        <p>2. Increased abundance.</p>
+
+        <p>3. A new offer on the table.</p>
+
+        <p>4. Negotiating pay rise.</p>
+
+        <p>5. Feeling secure.</p>
+
+        <p>6. Making good financial decisions.</p>
+
+        <p>7. Improvement in health and security.</p>
+
+
+        <h4 class="padding">Meanings</h4>
+
+        <p>The Ace of Pentacles denotes a new beginning in your financial situation and an opportunity to deepen
+          your security. This opportunity can come in a way of a new financial understanding. It can be a job offer, a
+          relationship (especially when surrounded by Cups) or an idea that will bring you prosperity. The Ace of Pentacles
+          brings a wonderful message of manifesting abundance. </p>
+
+        <p>It is time to ground yourself in planet Earth. Prosperity is on the cards. This is a good time to start new
+          and establish a secure foundation for yourself. The Ace of Pentacles often shows up when the querent has
+          decided to look after themselves better, both physically and emotionally. </p>
+
+        <p>In a love reading Ace of Pentacles speaks of an abundant relationship. This is the kind of
+          relationship that offers the couple security. The couple’s health and well-being increase as a result, and
+          their finances improve. They are more powerful together than what they are apart. If the querent is single Ace
+          of Pentacles denotes that focusing on health and fitness will bring the querent love.</p>
+
+        <p>In a career reading the Ace of Pentacles signifies a new job opportunity often with unlimited earning
+          potential. It also speaks of careers in business, real-estate and the health and fitness
+          industry.</p>
+
+
+        <h4 class="padding">Personality Types</h4>
+
+        <p>The Ace of Pentacles is someone who is good with money, career oriented and innovative.
+          Security and physical happiness are vital to this person. Ace of Pentacles people look after themselves both
+          physically and emotionally. They avoid toxic people and toxic environments at all costs. </p>
+
+        <p>They make the most out of changes and challenges, and are constantly moving forward towards a better and more
+          prosperous future. They lend a helping hand towards others in need, and view themselves as fortunate
+          people.</p>
+      </div>
+
+
+      <div class="item item-divider large-icon orange white ion-arrow-down-c" id="reversed">
+        Reversed
+      </div>
+      <div class="padding">
+        <h4 class="padding">Key Phrases</h4>
+
+        <p>1. Decreased income.</p>
+
+        <p>2. Loss of security.</p>
+
+        <p>3. Wasted opportunity.</p>
+
+
+        <h4 class="padding">Meanings</h4>
+
+        <p>The Ace of Pentacles reversed indicates financial loss and a decrease in security. There might have
+          been anticipation in regards to increased income and wealth which didn’t manifest. The Ace of Pentacles reversed
+          can also indicate greed and lack of generosity. It sometimes shows up reversed when the querent needs to adapt to a more healthy lifestyle.</p>
+
+
+        <h4 class="padding">Personality Types</h4>
+
+        <p>The Ace of Pentacles reversed is someone whose money slips through their fingers. They seem incapable of creating a
+          solid foundations for themselves and are constantly short of cash. There are also issues with commitment, both
+          career wise and in relationships.
+        </p>
+
+        <p>This person consumes in a very unsustainable way. The Ace of Pentacles reversed often indicates a very unhappy and
+          insecure person.It can also indicate that the querent has unhealthy lifestyle habits. </p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon orange white ion-image" id="symbolism">
+        Symbolism
+      </div>
+      <div class="padding">
+        <p>The hand emerging from the cloud symbolises something being offered, often from what appears to be out of nowhere. The
+          cloud signifies a fresh opportunity. The Pentacle in the hand indicates that the opportunity is about wealth, abundance and
+          security.</p>
+
+        <p>The rich garden represents health, well-being, security and prosperity. The pathway is straight which
+          symbolises few obstacles in moving forward. It leads to an arch of flowers and plants suggesting balance and
+          harmony. The mountain in the distance means more learning and growth in the future if we follow our path
+          of abundance.</p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon orange white ion-plus-round" id="combinations">
+        Combinations
+      </div>
+      <div class="padding">
+
+        <p>1. Ace of Pentacles + <a ui-sref="app.aceOfCups">Ace of Cups</a>: A stable new relationship. Moving in
+          together.</p>
+
+        <p>2. Ace of Pentacles + <a ui-sref="app.twoOfCups">Two of Cups</a>: Abundance in loving relationships.</p>
+
+        <p>3. Ace of Pentacles + <a ui-sref="app.fourOfCups">Four of Cups</a>: Dissatisfaction in work.</p>
+
+        <p>4. Ace of Pentacles + <a ui-sref="app.kingOfCups">King of Cups</a>: A health professional. A doctor.</p>
+
+        <p>5. Ace of Pentacles + <a ui-sref="app.aceOfSwords">Ace of Swords</a>: Loss of money. Bad investment.</p>
+
+        <p>6. Ace of Pentacles + <a ui-sref="app.twoOfSwords">Two of Swords</a>: Tight with money.</p>
+
+        <p>7. Ace of Pentacles + <a ui-sref="app.threeOfSwords">Three of Swords</a>: Financial hardship. Toxic relationship.</p>
+
+        <p>8. Ace of Pentacles + <a ui-sref="app.sevenOfSwords">Seven of Swords</a>: A con. Theft.</p>
+
+        <p>9. Ace of Pentacles + <a ui-sref="app.eightOfSwords">Eight of Swords</a>: In the dark about money.</p>
+
+        <p>10. Ace of Pentacles + <a ui-sref="app.kingOfSwords">King of Swords</a>: Debt collector. Competitive business.</p>
+
+        <p>11. Ace of Pentacles + <a ui-sref="app.aceOfWands">Ace of Wands</a>: A new career.</p>
+
+        <p>12. Ace of Pentacles + <a ui-sref="app.twoOfWands">Two of Wands</a>: Manifesting wealth.</p>
+
+        <p>13. Ace of Pentacles + <a ui-sref="app.threeOfWands">Three of Wands</a>: Publishing.</p>
+
+        <p>14. Ace of Pentacles + <a ui-sref="app.fourOfWands">Four of Wands</a>: A successful business. Business through word of mouth.</p>
+
+        <p>15. Ace of Pentacles + <a ui-sref="app.eightOfWands">Eight of Wands</a>: Receiving good news.</p>
+
+        <p>16. Ace of Pentacles + <a ui-sref="app.kingOfWands">King of Wands</a>: A business man.</p>
+
+        <p>17. Ace of Pentacles + <a ui-sref="app.twoOfPentacles">Two of Pentacles</a>: Turning a hobby into income.</p>
+
+        <p>18. Ace of Pentacles + <a ui-sref="app.threeOfPentacles">Three of Pentacles</a>: A productive team.</p>
+
+        <p>19. Ace of Pentacles + <a ui-sref="app.pageOfPentacles">Page of Pentacles</a>: Investing in yourself.</p>
+
+        <p>20. Ace of Pentacles + <a ui-sref="app.theMagician">The Magician</a>: Abundance in the sales industry. Business skills.</p>
+
+        <p>21. Ace of Pentacles + <a ui-sref="app.strength">Strength</a>: Success in Health industries.</p>
+
+        <p>22. Ace of Pentacles + <a ui-sref="app.theHermit">The Hermit</a>: Opportunity to teach.</p>
+
+        <p>23. Ace of Pentacles + <a ui-sref="app.theDevil">The Devil</a>: Greed.</p>
+
+        <p>24. Ace of Pentacles + <a ui-sref="app.theWorld">The World</a>: Government job. Government funding. Earning money overseas.</p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon orange white ion-ios-paper-outline" id="summary">
+        Summary
+      </div>
+      <div class="padding">
+        <p>The Ace of Pentacles denotes a time of increased abundance and opportunity to deepen your
+          security in a sustainable way. If you have business ideas or are contemplating an enterprise this card is a
+          very good omen indeed. The Ace of Pentacles speaks to infinite abundance.
+        </p>
+
+        <p>Don’t be afraid to aim big. The Universe wants you to achieve. When you are on your path and you are doing
+          what you were born to do abundance always follows. The Ace of Pentacles signifies an opportunity to create long
+          lasting wealth through good investments. </p>
+      </div>
+
+    </ion-content>
+    <div class="float-button">
+ <span class="height-fix">
+    <a class="content" ng-click="scrollToTop()">
+      <i class="ion-ios-arrow-up"> </i>
+    </a>
+    </span>
+    </div>
+  </div>
+</ion-view>

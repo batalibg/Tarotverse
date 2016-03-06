@@ -1,0 +1,210 @@
+<ion-view>
+  <div ng-controller="StorageCtrl">
+    <ion-content delegate-handle="mainScroll">
+      <h3 class="handwritten center padding-top large-font plum white">THE EMPEROR</h3>
+      <a class="button button-block large-icon ion-arrow-up-c" ng-click="slideTo('upright')">
+        Upright
+      </a>
+      <a class="button button-block large-icon ion-arrow-down-c" ng-click="slideTo('reversed')">
+        Reversed
+      </a>
+      <a class="button button-block large-icon ion-planet" ng-click="slideTo('astrology')">
+        Astrology
+      </a>
+      <a class="button button-block large-icon ion-image" ng-click="slideTo('symbolism')">
+        Symbolism
+      </a>
+      <a class="button button-block large-icon ion-plus-round" ng-click="slideTo('combinations')">
+        Combinations
+      </a>
+      <a class="button button-block large-icon ion-ios-paper-outline" ng-click="slideTo('summary')">
+        Summary
+      </a>
+
+      <div class="center padding">
+        <img src="img/theEmperor.jpg">
+      </div>
+
+
+      <div class="item item-divider plum white large-icon ion-arrow-up-c" id="upright">
+        Upright
+      </div>
+      <div class="padding">
+        <h4 class="padding">Key Phrases</h4>
+
+        <p>1. Creating order out of chaos.</p>
+
+        <p>2. Leadership and authority.</p>
+
+        <p>3. Making your own rules and having others obeying them.</p>
+
+        <p>4. Being your own boss.</p>
+
+        <p>5. Structure, logic and reason.</p>
+
+        <p>6. Energy, force and drive.</p>
+
+        <p>7. Being fearless.</p>
+
+
+        <h4 class="padding">Meanings</h4>
+
+        <p>The Emperor card represents masculine energy - the ruler and head of the household. It can represent
+          leaders of companies, organizations or communities. The Emperor is an authority figure who creates a solid
+          foundation for others to build upon. The Emperor creates order out of chaos. The Emperor uses logic rather
+          than intuition, and he prefers well thought out plans above impulsive action. The Emperor has strong values
+          and beliefs and is not likely to budge. This card can often represent big companies and/or government
+          organisations. In a reading the Emperor often shows up when it is time for the querent to make a
+          fresh start. This card advises that self-control and discipline are the best way forward. Make a commitment
+          and honor it.</p>
+
+        <p>In a love reading the Emperor denotes a relationship in which the couple often works together to build their own empire. In a career reading the Emperor signifies self-employment or high-level
+          leadership jobs.</p>
+
+        <h4 class="padding">Personality Types</h4>
+
+        <p>The Emperor archetype is someone competitive and ambitious. This is the aggressive alpha-male who naturally
+          gains power over others. Honest and offensive, Emperor type people don’t apologize for their behaviour. They are
+          confident and sure of their own worth, ready to take charge of any situation. Confrontational by nature they
+          often exhibit anger issues and have a big ego. They love being in charge. They also love getting lots of
+          attention from others.</p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon plum white ion-arrow-down-c" id="reversed">
+        Reversed
+      </div>
+      <div class="padding">
+        <h4 class="padding">Key Phrases</h4>
+
+        <p>1. Chaos.</p>
+
+        <p>2. Poor leadership.</p>
+
+        <p>3. Lack of energy.</p>
+
+
+        <h4 class="padding">Meanings</h4>
+
+        <p>The Emperor reversed translates to someone with a childish streak, inconsistent and unpredictable. If
+          it represents the querent it can mean something is blocking the energy that gives the person
+          authority.</p>
+
+        <p>Rather than being respected, you might find that people are dishonoring you. There is a lack
+          of control and order. The Emperor reversed can indicate a time when chaos and havoc rules.</p>
+
+
+        <h4 class="padding">Personality Types</h4>
+
+        <p>The Emperor reversed expresses someone who feels dissatisfied, and is unhappy with their life
+          situation. They often lack confidence. This is someone who is absent or elusive. Dreamy and impulsive, they
+          come across as highly unpredictable. This card often shows up reversed when you are dealing
+          with teenagers.</p>
+      </div>
+
+      <div class="item item-divider large-icon plum white ion-planet" id="astrology">
+        Astrology
+      </div>
+      <div class="padding">
+        <p>The Emperor is connected with Mars and is ruled by Aries. Aries is the first sign of the Zodiac and
+          denotes leadership and initiative. Mars energizes all of the other planets in the zodiac. Mars governs the masculine
+          element and is known as the warrior planet, it covers sexual powers, courage, energy, action, protectiveness,
+          and valor. Mars also governs sharp instruments, fire and anything combustible, and if Mars is too energetic,
+          emotional outbursts could erupt. If harmonious, Mars assists with endurance and determination. Mars is also
+          connected to the Tower.</p>
+      </div>
+
+      <div class="item item-divider large-icon plum white ion-image" id="symbolism">
+        Symbolism
+      </div>
+      <div class="padding">
+        <p>The throne embodies being in power. The ram heads symbolize power, force, drive, energy, virility,
+          protection and fearlessness. There are four rams heads carved on his stone chair, invoking a stable energy. </p>
+
+        <p>The Emperor is armored under his robe, reflecting his stature as a leader and ruler. The cold and rocky landscape
+          represents the Emperor’s discipline. In his right hand he holds an ankh, which is the Egyptian symbol for life.
+          In his left hand he holds an orb, symbolising a globus cruciger, which is a symbol for emperors, kings and
+          archangels.</p>
+
+        <p>The Emperor’s long white hair and beard indicates that he has wisdom and experience, as well as a high social
+          status. The orange background and his red clothing signals his passion and drive.</p>
+
+      </div>
+
+
+      <div class="item item-divider large-icon plum white ion-plus-round" id="combinations">
+        Combinations
+      </div>
+      <div class="padding">
+
+        <p>1. The Emperor + <a ui-sref="app.theHierophant">The Hierophant</a>: A corner-stone business. Franchise.</p>
+
+        <p>2. The Emperor + <a ui-sref="app.theLovers">The Lovers</a>: A stable relationship.</p>
+
+        <p>3. The Emperor + <a ui-sref="app.theHermit">The Hermit</a>: Retirement.</p>
+
+        <p>4. The Emperor + <a ui-sref="app.justice">Justice</a>: Justice system.</p>
+
+        <p>5. The Emperor + <a ui-sref="app.theWorld">The World</a>: The government.</p>
+
+        <p>6. The Emperor + <a ui-sref="app.twoOfSwords">Two of Swords</a>: A diplomat.</p>
+
+        <p>7. The Emperor + <a ui-sref="app.fourOfSwords">Four of Swords</a>: A hospital.</p>
+
+        <p>8. The Emperor + <a ui-sref="app.fiveOfSwords">Five of Swords</a>: A criminal.</p>
+
+        <p>9. The Emperor + <a ui-sref="app.eightOfSwords">Eight of Swords</a>: Prison guard. A prison.</p>
+
+        <p>10. The Emperor + <a ui-sref="app.aceOfCups">Ace of Cups</a>: A spiritual leader.</p>
+
+        <p>11. The Emperor + <a ui-sref="app.sevenOfCups">Seven of Cups</a>: The internet.</p>
+
+        <p>12. The Emperor + <a ui-sref="app.nineOfCups">Nine of Cups</a>: A restaurant.</p>
+
+        <p>13. The Emperor + <a ui-sref="app.tenOfCups">Ten of Cups</a>: Head of the family.</p>
+
+        <p>14. The Emperor + <a ui-sref="app.knightOfCups">Knight of Cups</a>: Theater.</p>
+
+        <p>15. The Emperor + <a ui-sref="app.aceOfWands">Ace of Wands</a>: A new career path.</p>
+
+        <p>16. The Emperor + <a ui-sref="app.twoOfWands">Two of Wands</a>: Promotion.</p>
+
+        <p>17. The Emperor + <a ui-sref="app.fourOfWands">Four of Wands</a>: Marriage.</p>
+
+        <p>18. The Emperor + <a ui-sref="app.sevenOfWands">Seven of Wands</a>: An academy.</p>
+
+        <p>19. The Emperor + <a ui-sref="app.queenOfWands">Queen of Wands</a>: Business school.</p>
+
+        <p>20. The Emperor + <a ui-sref="app.aceOfPentacles">Ace of Pentacles</a>: Government job.</p>
+
+        <p>21. The Emperor + <a ui-sref="app.threeOfPentacles">Three of Pentacles</a>: Team leader.</p>
+
+        <p>22. The Emperor + <a ui-sref="app.sixOfPentacles">Six of Pentacles</a>: Large charity.</p>
+
+        <p>23. The Emperor + <a ui-sref="app.sevenOfPentacles">Seven of Pentacles</a>: A science project.</p>
+
+        <p>24. The Emperor + <a ui-sref="app.knightOfPentacles">Knight of Pentacles</a>: Government housing.</p>
+
+      </div>
+
+      <div class="item item-divider large-icon plum white ion-ios-paper-outline" id="summary">
+        Summary
+      </div>
+      <div class="padding">
+        <p>The Emperor announces leadership and authority. The querent will achieve the best result when
+          implementing structure and logic to their projects when the Emperor shows up in their spread. This
+          card can also signify government, government agencies or large instances of cooperation. In a career reading the Emperor often is present when the querent will be most satisfied working for themselves.
+        </p>
+      </div>
+
+    </ion-content>
+    <div class="float-button">
+ <span class="height-fix">
+    <a class="content" ng-click="scrollToTop()">
+      <i class="ion-ios-arrow-up"> </i>
+    </a>
+    </span>
+    </div>
+  </div>
+</ion-view>

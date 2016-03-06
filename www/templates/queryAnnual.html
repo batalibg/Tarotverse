@@ -1,0 +1,22 @@
+<ion-view>
+  <ion-content ng-controller="StorageCtrl">
+    <div class="center">
+      <div class="hidden-box">{{spreadURL='app.spreadAnnual'}}</div>
+      <div class="hidden-box">{{newDate | date:'MM-dd-yyyy'}}</div>
+      <h4 class="grey padding">What is your {{spread='Annual'}} query?</h4>
+
+
+      <textarea ng-model="newQuery" autofocus class="litegray centertextarea padding" rows="15" cols="50"
+                placeholder="I'm wondering about..."></textarea>
+
+      <button class="button button-clear padding" style="margin: 13px 50px 0 0;" ui-sref="app.readingAnnual">Skip
+      </button>
+
+
+      <button ng-click="addSpread(spread, spreadURL, newQuery, newDate)" ui-sref="app.readingAnnual" class="button plum white large-icon center" style="margin: 20px 0 0 20px;">
+        Confirm
+      </button>
+
+    </div>
+  </ion-content>
+</ion-view>

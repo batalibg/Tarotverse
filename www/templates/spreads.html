@@ -1,0 +1,235 @@
+<ion-view >
+  <div ng-controller="StorageCtrl">
+  <ion-content delegate-handle="mainScroll">
+    <h3 class="handwritten center padding-top large-font grey">SPREADS</h3>
+    <div class="center">
+      <img src="img/tarotSpreads.png">
+    </div>
+    <a class="button button-block large-icon ion-android-globe plum white" ng-click="slideTo('spreadGeneral')">
+      General
+    </a>
+    <a class="button button-block large-icon ion-ios-eye teal white" ng-click="slideTo('spreadSpiritual')">
+      Spiritual
+    </a>
+    <a class="button button-block large-icon ion-ios-home-outline orange white" ng-click="slideTo('spreadHomeAndFamily')">
+      Home & Family
+    </a>
+    <a class="button button-block large-icon ion-ios-briefcase-outline green white" ng-click="slideTo('spreadCareerAndBusiness')">
+      Career & Business
+    </a>
+    <a class="button button-block large-icon ion-ios-heart-outline red white" ng-click="slideTo('spreadLoveAndRelationships')">
+      Love & Relationships
+    </a>
+    <div class="huge-icon ion-ios-infinite-outline grey center"></div>
+    <ion-list>
+      <ion-item id="spreadGeneral" class="large-icon ion-android-globe plum white">
+        General
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadAnnual">
+      <img class="smallspread" src="/img/spreadAnnual.jpg"><div class="vertical-pad">Annual</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadCelticCross">
+        <img class="smallspread" src="/img/spreadCelticCross.jpg"><div class="vertical-pad">Celtic Cross</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadCheckingTheDirection">
+        <img class="smallspread" src="/img/spreadCheckingTheDirection.jpg"><div class="vertical-pad">Checking The Direction</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadMountainsAndMolehills">
+        <img class="smallspread" src="/img/spreadMountainsAndMolehills.jpg"><div class="vertical-pad">Mountains And<br /> Molehills</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadOpportunitiesAndObstacles">
+        <img class="smallspread" src="/img/spreadOpportunitiesAndObstacles.jpg"><div class="vertical-pad">Opportunities And Obstacles</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadSevenCardHorseshoe">
+        <img class="smallspread" src="/img/spreadSevenCardHorseshoe.jpg"><div class="vertical-pad">Seven Card Horseshoe</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadShouldYouShouldntYou">
+        <img class="smallspread" src="/img/spreadShouldYouShouldntYou.jpg"><div class="vertical-pad">Should You <br />Shouldn't You?</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadSimple">
+        <img class="smallspread" src="/img/spreadSimple.jpg"><div class="vertical-pad">Simple</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadSingleCard">
+        <img class="smallspread" src="/img/spreadSingleCard.jpg"><div class="vertical-pad">Single Card</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadSnapshot">
+        <img class="smallspread" src="/img/spreadSnapshot.jpg"><div class="vertical-pad">Snapshot</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadStuck">
+        <img class="smallspread" src="/img/spreadStuck.jpg"><div class="vertical-pad">Stuck</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadThisMonth">
+        <img class="smallspread" src="/img/spreadThisMonth.jpg"><div class="vertical-pad">This Month</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadThisWeek">
+        <img class="smallspread" src="/img/spreadThisWeek.jpg"><div class="vertical-pad">This Week</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadThreeCard">
+        <img class="smallspread" src="/img/spreadThreeCard.jpg"><div class="vertical-pad">Three Card</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadTreeOfLife">
+        <img class="smallspread" src="/img/spreadTreeOfLife.jpg"><div class="vertical-pad">Tree Of Life</div>
+      </ion-item>
+
+
+      <ion-item id="spreadSpiritual" class="large-icon ion-ios-eye teal white">
+      Spiritual
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadChakra">
+        <img class="smallspread" src="/img/spreadChakra.jpg"><div class="vertical-pad">Chakra</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadChakraBalance">
+        <img class="smallspread" src="/img/spreadChakra.jpg"><div class="vertical-pad">Chakra Balance</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadPastLife">
+        <img class="smallspread" src="/img/spreadPastLife.jpg"><div class="vertical-pad">Past Life</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadRightPath">
+        <img class="smallspread" src="/img/spreadRightPath.jpg"><div class="vertical-pad">Right Path</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadSpiritualProgress">
+        <img class="smallspread" src="/img/spreadThisMonth.jpg"><div class="vertical-pad">Spiritual <br />Progress</div>
+      </ion-item>
+
+
+      <ion-item id="spreadHomeAndFamily" class="large-icon ion-ios-home-outline orange white">
+      Home & Family
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadChallengingChildren">
+        <img class="smallspread" src="/img/spreadChallengingChildren.jpg"><div class="vertical-pad">Challenging Children</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadChild">
+        <img class="smallspread" src="/img/spreadChild.jpg"><div class="vertical-pad">Child</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadChildhoodProblems">
+        <img class="smallspread" src="/img/spreadTreeOfLife.jpg"><div class="vertical-pad">Childhood Problems</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadMissingPet1">
+        <img class="smallspread" src="/img/spreadMissingPet1.jpg"><div class="vertical-pad">Missing Pet #1</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadMissingPet2">
+        <img class="smallspread" src="/img/spreadMissingPet2.jpg"><div class="vertical-pad">Missing Pet #2</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadMovingHouse">
+        <img class="smallspread" src="/img/spreadMovingHouse.jpg"><div class="vertical-pad">Moving House</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadPet">
+        <img class="smallspread" src="/img/spreadPet.jpg"><div class="vertical-pad">Pet</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadSiblingRivalry1">
+        <img class="smallspread" src="/img/spreadSiblingRivalry1.jpg"><div class="vertical-pad">Sibling Rivalry #1</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadSiblingRivalry2">
+        <img class="smallspread" src="/img/spreadSiblingRivalry2.jpg"><div class="vertical-pad">Sibling Rivalry #2</div>
+      </ion-item>
+
+
+      <ion-item id="spreadCareerAndBusiness" class="large-icon ion-ios-briefcase-outline green white">
+      Career & Finance
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadCareer">
+        <img class="smallspread" src="/img/spreadThisMonth.jpg"><div class="vertical-pad">Career</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadExpandingYourBusiness">
+        <img class="smallspread" src="/img/spreadThisMonth.jpg"><div class="vertical-pad">Expanding <br />Your <br />Business</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadFinance">
+        <img class="smallspread" src="/img/spreadFinance.jpg"><div class="vertical-pad">Finance</div>
+      </ion-item><ion-item class="button-full" ui-sref="app.spreadMoney">
+      <img class="smallspread" src="/img/spreadMoney.jpg"><div class="vertical-pad">Money</div>
+    </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadMoneyProblems">
+        <img class="smallspread" src="/img/spreadMoneyProblems.jpg"><div class="vertical-pad">Money Problems</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadStartingUp">
+        <img class="smallspread" src="/img/spreadStartingUp.jpg"><div class="vertical-pad">Starting Up</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadWhichJob">
+        <img class="smallspread" src="/img/spreadWhichJob.jpg"><div class="vertical-pad">Which Job?</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadWork">
+        <img class="smallspread" src="/img/spreadThreeCard.jpg"><div class="vertical-pad">Work</div>
+      </ion-item>
+
+
+      <ion-item id="spreadLoveAndRelationships" class="large-icon ion-ios-heart-outline red white">
+       Love & Relationships
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadExLover">
+        <img class="smallspread" src="/img/spreadExLover.jpg"><div class="vertical-pad">Ex-Lover</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadHeartache">
+        <img class="smallspread" src="/img/spreadSiblingRivalry2.jpg"><div class="vertical-pad">Heartache</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadIsItTooLate">
+        <img class="smallspread" src="/img/spreadIsItTooLate.jpg"><div class="vertical-pad">Is It Too Late?</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadItsNeverTooLate">
+        <img class="smallspread" src="/img/spreadItsNeverTooLate.jpg"><div class="vertical-pad">It's Never Too Late</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadLettingGo">
+        <img class="smallspread" src="/img/spreadLettingGo.jpg"><div class="vertical-pad">Letting Go</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadMagicalLove">
+        <img class="smallspread" src="/img/spreadChild.jpg"><div class="vertical-pad">Magical Love</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadMirrorMirror">
+        <img class="smallspread" src="/img/spreadMirrorMirror.jpg"><div class="vertical-pad">Mirror Mirror</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadNewRelationship">
+        <img class="smallspread" src="/img/spreadMoney.jpg"><div class="vertical-pad">New Relationship</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadOngoingRelationship">
+        <img class="smallspread" src="/img/spreadOngoingRelationship.jpg"><div class="vertical-pad">Ongoing Relationship</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadPartnershipAsMirror">
+        <img class="smallspread" src="/img/spreadSiblingRivalry2.jpg"><div class="vertical-pad">Partnership As Mirror</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadReadyForLove">
+        <img class="smallspread" src="/img/spreadReadyForLove.jpg"><div class="vertical-pad">Ready For Love?</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadRelationshipCross">
+        <img class="smallspread" src="/img/spreadRelationshipCross.jpg"><div class="vertical-pad">Relationship Cross</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadRelationshipProblems">
+        <img class="smallspread" src="/img/spreadRelationshipProblems.jpg"><div class="vertical-pad">Relationship Problems</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadSheHeIt">
+        <img class="smallspread" src="/img/spreadSheHeIt.jpg"><div class="vertical-pad">She He It</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadShouldIStay">
+        <img class="smallspread" src="/img/spreadShouldIStay.jpg"><div class="vertical-pad">Should I Stay?</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadSoulmate">
+        <img class="smallspread" src="/img/spreadSoulmate.jpg"><div class="vertical-pad">Soulmate?</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadSuitability">
+        <img class="smallspread" src="/img/spreadSuitability.jpg"><div class="vertical-pad">Suitability</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadTheOne">
+        <img class="smallspread" src="/img/spreadChild.jpg"><div class="vertical-pad">The One?</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadTrueFriends">
+        <img class="smallspread" src="/img/spreadThisMonth.jpg"><div class="vertical-pad">True <br />Friends</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadWhichLove">
+        <img class="smallspread" src="/img/spreadWhichLove.jpg"><div class="vertical-pad">Which Love?</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadWillIFindTrueLove">
+        <img class="smallspread" src="/img/spreadChild.jpg"><div class="vertical-pad">Will I Find True Love?</div>
+      </ion-item>
+      <ion-item class="button-full" ui-sref="app.spreadYoungLove">
+        <img class="smallspread" src="/img/spreadMoney.jpg"><div class="vertical-pad">Young Love</div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+    <div class="float-button">
+ <span class="height-fix">
+    <a class="content" ng-click="scrollToTop()">
+      <i class="ion-ios-arrow-up"> </i>
+    </a>
+    </span>
+    </div>
+    </div>
+</ion-view>
+
